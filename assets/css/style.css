@@ -8,9 +8,75 @@ body{
     --main-color:#3B8EE8;
     --second-color: #0B3D74;
     --backGround-color: #F8F8F8;
+    --gray:#B5BEC8;
+
+}
+/*.navbar-toggler {*/
+/*    */
+/*    border: none;*/
+
+/*}*/
+
+/*  style for tab  */
+.nav-tabs .nav-link {
+    border: none;
+}
 
 
+.navbar-toggler:focus,
+.navbar-toggler:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.white-header .nav-link{
+    font-size: 14px;
+    color: black !important ;
+    font-weight: 300;
+}
+.white-header .active{
+    color: var(--main-color) !important;
+    font-weight: 500 !important;
+    position: relative;
+}
+.white-header .active::before{
+    content: " ";
+    position: absolute;
+    width: 70%;
+    height: 2px;
+    background-color: var(--main-color);
+    display: inline-block;
+    z-index: 100;
+    top:80%;
+}
+.gradiant_nav .nav-link{
+    font-size: 14px;
+    color:white !important;
+    font-weight: 300 !important;
+    position: relative;
+}
+.gradiant_nav .active{
 
+    font-weight: 400 !important;
+    position: relative;
+}
+.gradiant_nav .active::before{
+    content: " ";
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    background-color:white;
+    display: inline-block;
+    z-index: 100;
+    top:80%;
+}
+
+.login-btn{
+    border-radius: 22px;
+    border: 1.5px solid var(--second-color);
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 300;
 }
 
 /*start scrollbar */
@@ -28,23 +94,27 @@ body{
     border-radius: 20px;
     border-width: 3px;
 }
-
+a{
+    text-decoration: none;
+}
+/* to remove arrow from number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 .header-div{
     background: linear-gradient(261deg, #3C8CE7 0%, #00D6E9 100%);
     box-shadow: 0px 10px 50px 0px rgba(47, 157, 232, 0.06);
 }
-.text-header{
-    color: white!important;
-    font-size: 14px;
-    font-weight: 300;
-}
+
 .text-hero{
     color: white;
 }
 .custom_card{
     border-radius: 8px;
-    border: 2px solid #ECECEC;
+    border: 1px solid #ECECEC;
 }
 .card-body span{
     font-size: 10px;
@@ -106,24 +176,123 @@ body{
     font-weight: 400;
 
 }
+.slide-arrow,
+.prev-arrow,
+.next-arrow {
+    color: #fff;
 
+}
+
+.next-arrow{
+    margin-left:0;
+}
+
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+}
+
+
+.next-arrow i {
+    color: black;
+    font-size: 16px;
+    background:white;
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+[dir='rtl'] .slick-prev:before,
+[dir='rtl'] .slick-next:before {
+    content: '';
+    display: none;
+
+}
+.search_input{
+    background: none;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    color: white;
+    font-size: 12px;
+position: relative;
+    font-weight: 300;
+}
+.search_icon{
+    background: none;
+    color: white;
+    border: none;
+    position: absolute;
+    right: 92%;
+    top:20%
+}
+.filter{
+    border-radius: 4px;
+    border: 1px solid white;
+    background: #2C79CD;
+}
+.header-drop{
+    border-radius: 4px;
+    background: rgba(251, 251, 251, 0.13);
+
+}
+.header-drop a{
+    color: white;
+    font-size: 12px;
+}
+.tab{
+    color: white;
+    font-size: 10px;
+}
+.white_nav{
+    background: white;
+    box-shadow: 0 10px 50px 0 rgba(47, 157, 232, 0.06);
+}
+.home-btn{
+    border: 1px solid white;
+    color: white;
+    font-size: 13px;
+}
+.home-btn:hover{
+    background: white;
+    color: var(--main-color);
+}
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+.search-input {
+    display: none;
+    padding: 5px;
+    border: 1px solid #ccc;
+    position: absolute;
+    bottom:-3rem;
+    right: -1rem;
+    transition: all 0.3s ease-in-out;
+}
+.search-input:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+
+}
+.search-icon {
+    cursor: pointer;
+}
 /******************************* start style about us page   *******************************************************/
 .ul_about{
     position: relative;
+    list-style-image: url(../img/list.svg);
 
 }
-.item_about_us{
-    position: relative;
-}
-.item_about_us::before{
-    content: url("assets/img/list.svg");
-    position: absolute;
-    right: -5%;
-    top: 0;
-    z-index: 1000000000;
 
-
-}
 .item_about_us{
     font-weight: 300;
     font-size: 14px;
@@ -153,29 +322,8 @@ body{
     color: var(--second-color);
     font-size: 14px;
     font-weight: 500;
+
 }
-
-/***************/
-.text_footer{
-    color: white;
-    font-size: 12px;
-    /*text-decoration: none;*/
-    font-weight: 300;
-    line-height: 2.5rem;
-}
-footer a{
-    text-decoration: none;
-}
-/*****************/
-header navbar{
-    background: #FFF;
-    box-shadow: 0px 10px 50px 0px rgba(47, 157, 232, 0.06);
-}
-
-
-
-
-
 
 .left-side-images {
     max-width: 205px;
@@ -187,6 +335,399 @@ header navbar{
     margin: 0 auto;
 }
 
+/************************** start style common Q page *************************************/
+.customize-according{
+    background: var(--backGround-color) !important;
+    border-radius: 10px !important;
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+    border: none;
+}
+
+.btn:focus,
+.btn:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed){
+    /*border: 1px solid var(--second-color);*/
+    box-shadow: none !important;
+
+}
+
+.customize-acc-body{
+    font-size: 12px;
+    font-weight: 300;
+    color: #606E7D;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+
+    border-radius: 10px;
+    border:none ;
+}
+
+/************  start style login page 1 *******************/
+
+.password-container{
+    position: relative;
+}
+.toggle-password_3 {
+    position: absolute;
+    left: 5%;
+    top: 54%;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--main-color);
+    background: var(--backGround-color);
+}
+.form-check-input:focus{
+    outline: none;
+    box-shadow: none;
+    border: 1px solid var(--main-color);
+
+}
+.tab-title{
+    font-size: 14px;
+    color: #7797BB;
+}
+.title_log{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+}
+.sub_title_log{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0.07px;
+
+}
+.active > .tab-title{
+    color: var(--main-color);
+    position: relative;
+
+}
+.active > .tab-title::before{
+    content: " ";
+    width: 6rem;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    /*bottom: 34%;*/
+    display: inline-block;
+    z-index: 100;
+    right: 0;
+    top:155%;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    background: none;
+}
+.nav-tabs .nav-link.active{
+    border-color: transparent;
+}
+.gray_text{
+    color: #6E7E89;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+}
+.btn_submit_1 {
+    background: var(--main-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: white;
+    border-radius: 8px;
+}
+.btn_submit_1:hover{
+    background-color:white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: all 0.3s ease-in-out;}
+.btn_submit_1:hover path{
+    fill:var(--main-color);
+}
+
+
+/************************ start style password page 1*************************************/
+.card-container{
+    border:1px solid #7797BB;
+    border-radius: 4px;
+}
+.rounded-inp{
+    border-radius: 30px;
+    background: var(--main-color);
+    color: white;
+    font-size: 14px;
+    border:none;
+}
+.gray-inp{
+    background: var(--backGround-color);
+    border: none;
+    border-radius: 8px;
+}
+
+
+/************************** start style service details ******************************/
+.gray_page{
+    color: #B5BEC8;
+    font-size: 14px;
+    font-weight:400;
+
+}
+
+.Before_After_div{
+    position: relative;
+    z-index: 0;
+
+}
+.Before_After_div::before{
+    content: "";
+    border-radius: 8px;
+    border: 1px solid #000;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    top:0;
+    right: 0;
+
+
+}
+.Before_After_div::after{
+    content: " 35+";
+    position: absolute;
+    z-index: 10000;
+    top:46%;
+    right: 38%;
+    color: white;
+    font-size: 20px;
+
+    font-weight: 400;
+}
+
+.g_circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6E7E89;
+}
+.under_text{
+    font-size: 10px;
+    color:#484848;
+    font-weight: 400;
+}
+.heart_div{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: white;
+    box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
+
+}
+.White_card{
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
+
+}
+.li_blue{
+    color: var(--second-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    background: url('../img/list_square.svg') no-repeat right center;
+    padding: 11px 30px 11px 25px;
+    list-style: none;
+
+}
+.service-ul{
+
+    /*list-style-image: url(../img/list_square.svg);*/
+
+}
+.checked {
+    color: #FEBA02;
+}
+/*************  style create account page **************************/
+.provider_btn{
+    border-radius: 4px;
+    background: var(--backGround-color) !important;
+    color: var(--second-color);
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.customer_btn{
+    border-radius: 4px;
+    background: var(--second-color) !important;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/********************* start style congratulation page  *****************************************/
+.btn_submit_W{
+    border: 1px solid var(--main-color);
+    font-size: 14px;
+    color: var(--main-color);
+    border-radius: 8px;
+    line-height: 30px;
+
+}
+.btn_submit_W:hover{
+    background: var(--main-color);
+    color: white;
+    transition: all 0.3s ease-in-out;
+
+}
+.btn_submit_W:hover path{
+    fill:white;
+}
+
+
+/************** start style hotel details page ****************************************/
+.service-btn{
+    border-radius: 4px;
+    border: 1px solid var(--second-color);
+    color: var(--second-color);
+    font-size: 12px;
+    font-weight: 700;
+}
+
+/*************  start style order info page*****************************************************/
+.label-form{
+    font-size: 14px;
+    font-weight: 500;
+    color: black;
+
+}
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider_on_off {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: var(--main-color);
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--main-color);
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+.next-btn{
+    border-radius: 8px;
+    border: 1px solid var(--main-color);
+    font-size: 14px;
+
+}
+
+/*  test  */
+input[type="file"]{
+    display: none;
+}
+.uploadlabel{
+    border-radius: 6px;
+    color: var(--gray);
+    border: 2px solid;
+    font-size: 14px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+
+/**************** footer style ***************************/
+
+.text_footer{
+    color: white;
+    font-size: 12px;
+    /*text-decoration: none;*/
+    font-weight: 300;
+    line-height: 2.5rem;
+}
+footer a{
+    text-decoration: none;
+
+}
+/*************** end footer style   ******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/******** about us images  ***********/
 @media (max-width: 576px) {
     .left-side-images {
         max-width: unset;

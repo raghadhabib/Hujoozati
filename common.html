@@ -18,33 +18,37 @@
 <body>
 <!--start header section -->
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light-gray">
+    <nav class=" white_nav navbar navbar-expand-lg navbar-light ">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="assets/img/Glogo.svg" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav align-items-center me-auto mb-2 mb-lg-0">
-                    <li class="nav-item mx-2 ">
-                        <a class="nav-link " aria-current="page" href="#">الرئيسية</a>
+
+                <ul class="navbar-nav align-items-center mx-auto mb-2 mb-lg-0 white-header">
+
+                    <li class="nav-item  ">
+                        <a class="nav-link " aria-current="page" href="index.html">الرئيسية</a>
                     </li>
 
-                    <li class="nav-item mx-4 ">
-                        <a class="nav-link active" href="#">من نحن</a>
+                    <li class="nav-item mx-2 ">
+                        <a class="nav-link " href="about-us.html">من نحن</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link " href="#">الاسئلة الشائعة</a>
+                        <a class="nav-link active " href="common.html">الاسئلة الشائعة</a>
                     </li>
 
                 </ul>
 
-                <ul class="nav align-items-center  mb-2 mb-lg-0">
+                <ul class="nav align-items-center  mb-2 mb-lg-0 white-header justify-content-center">
                     <li class="nav-item ">
-                        <a class="nav-link " href="#">تنزيل التطبيق</a>
+                        <a class="nav-link " href="#" >تنزيل التطبيق</a>
                     </li>
 
                     <li class="nav-item ">
@@ -53,8 +57,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"><img src="assets/img/icons/headertringle.svg"></a>
                     </li>
-                    <li class="nav-item">
-                        <button type="button" class="btn btn-primary  pt-1 pb-2  blueButton">تسجيل الدخول</button>
+                    <li class="nav-item ms-4">
+                        <a href="log_in.html" type="button" class="px-3 py-2 align-items-center d-flex login-btn">
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 19C4 16.2386 6.23858 14 9 14H15C17.7614 14 20 16.2386 20 19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19Z" fill="#CFE0F3"/>
+                <path d="M12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2Z" fill="#0B3D74"/>
+                </svg>
+              </span>
+                            تسجيل الدخول</a>
 
                     </li>
                 </ul>
@@ -66,103 +77,138 @@
 <!-- end header section -->
 <div class="container">
     <div class="row mt-5">
-        <div class="col-12 col-lg-6">
-                <div class="ms-4">
-                    <h2 class="title mb-0">الأسئلة الشائعة</h2>
-                </div>
-<!--     start according           -->
+        <div class="col-12 col-lg-6 mt-5">
+            <div class="ms-4">
+                <h2 class="title mb-0">الأسئلة الشائعة</h2>
+            </div>
+            <!--     start according           -->
             <div class="accordion mt-5" id="accordionExample">
 
-                <div class="accordion-item">
+                <div class="accordion-item customize-according">
                     <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="accordion-button customize-according btn " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             كيف أصبح مزود خدمة؟
                         </button>
                     </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على أفضل منتج.
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body customize-acc-body">
+                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من
+                            المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث
+                            والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على
+                            أفضل منتج.
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item">
+                <div class="accordion-item customize-according mt-2">
                     <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="accordion-button customize-according btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             كيف أحصل على أفضل سعر؟
                         </button>
                     </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على أفضل منتج.
+                    <div id="collapseTwo" class="accordion-collapse collapse " aria-labelledby="headingTwo"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body customize-acc-body">
+                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من
+                            المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث
+                            والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على
+                            أفضل منتج.
                         </div>
                     </div>
                 </div>
 
-                <div class="accordion-item">
+                <div class="accordion-item customize-according mt-2">
                     <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <button class="accordion-button customize-according btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                             كيفية اضافة رصيد للمحفظة؟
                         </button>
                     </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    <div id="collapseThree" class="accordion-collapse collapse " aria-labelledby="headingThree"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body customize-acc-body">
+                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من
+                            المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث
+                            والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على
+                            أفضل منتج.
                         </div>
                     </div>
                 </div>
 
-            </div>
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="accordingfour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="accordingfour" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div class="accordion-item customize-according mt-2">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button customize-according btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            ما هي طرق الدفع المتوفرة؟
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse " aria-labelledby="headingFour"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body customize-acc-body">
+                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من
+                            المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث
+                            والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على
+                            أفضل منتج.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="accordingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="accordingFive" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div class="accordion-item customize-according mt-2">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button customize-according btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="tru" aria-controls="collapseFive">
+                            كيف اتواصل مع الدعم الفني؟
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse " aria-labelledby="headingFive"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body customize-acc-body">
+                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من
+                            المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث
+                            والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على
+                            أفضل منتج.
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="accordingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour4" aria-expanded="false" aria-controls="collapseFour4">
-                        Accordion Item #2
-                    </button>
-                </h2>
-                <div id="collapseFour4" class="accordion-collapse collapse" aria-labelledby="accordingSix" data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <div class="accordion-item customize-according mt-2">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button customize-according btn collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            كيفية الغاء الطلب؟
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse " aria-labelledby="headingSix"
+                         data-bs-parent="#accordionExample">
+                        <div class="accordion-body customize-acc-body">
+                            غالباً ما يحتاج العثور على المنتج الذي ترغب في شراءه مجهوداً كبيراً إذا قمت بالتسوق من
+                            المتاجر التقليدية الموجودة بمراكز التسوق، ولكن إذا قررت التسوق أون لاين فإن عملية البحث
+                            والعثور على المنتج ستكون أكثر سهولة من خلال تصفح بعض قنوات التسوق الإلكترونية للحصول على
+                            أفضل منتج.
+                        </div>
                     </div>
+
                 </div>
+
+
             </div>
 
 
         </div>
 
 
+        <div class="col-12 col-lg-6 ps-5">
+            <img src="assets/img/Question.svg" class="img-fluid" alt="">
+        </div>
 
 
-    <div class="col-12 col-lg-6 ps-5">
-        <img src="assets/img/Question.svg" class="img-fluid" alt="">
+
     </div>
-</div></div>
+</div>
+
 
 
 
@@ -171,22 +217,24 @@
 <footer class="mt-5" style="background-color: var(--second-color)">
     <div class="container py-5">
         <div class="row align-items-center text-center text-lg-start">
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-3">
                 <div class="d-flex flex-column flex-lg-column ">
                     <div class=" justify-content-start d-flex my-3">
                         <img src="assets/img/icons/footerLogo.svg" alt="" class="img-fluid">
                     </div>
-                    <p class="text_footer">موقع حجوزاتي ، لتسهيل طلب خدماتك باسرع وقت ممكن مع اقوى التقنيين بشكل آمن ومنظم.</p>
+                    <p class="text_footer">موقع حجوزاتي ، لتسهيل طلب خدماتك باسرع وقت ممكن مع اقوى التقنيين بشكل آمن
+                        ومنظم.</p>
                 </div>
             </div>
-
-            <div class="col-lg-3 col-md-6 ps-lg-5 mt-lg-5">
+            <div class="col-lg-3 col-md-3 ps-lg-5 mt-lg-5">
                 <div class="d-flex flex-column flex-lg-column">
                     <a href="#">
                         <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z" stroke="url(#paint0_linear_89_6608)"/>
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
                             <defs>
-                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07"
+                                                gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#3C8CE7"/>
                                     <stop offset="1" stop-color="#00D6E9"/>
                                 </linearGradient>
@@ -197,11 +245,13 @@
 
                     </a>
 
-                    <a href="#">
+                    <a href="about-us.html">
                         <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z" stroke="url(#paint0_linear_89_6608)"/>
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
                             <defs>
-                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07"
+                                                gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#3C8CE7"/>
                                     <stop offset="1" stop-color="#00D6E9"/>
                                 </linearGradient>
@@ -212,11 +262,13 @@
 
                     </a>
 
-                    <a href="#">
+                    <a href="common.html">
                         <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z" stroke="url(#paint0_linear_89_6608)"/>
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
                             <defs>
-                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07"
+                                                gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#3C8CE7"/>
                                     <stop offset="1" stop-color="#00D6E9"/>
                                 </linearGradient>
@@ -228,16 +280,17 @@
                     </a>
 
 
-
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6 mt-lg-1" >
+            <div class="col-lg-3 col-md-3 mt-lg-1">
                 <div class="d-flex flex-column flex-lg-column justify-content-between">
                     <a href="#">
                         <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z" stroke="url(#paint0_linear_89_6608)"/>
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
                             <defs>
-                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07"
+                                                gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#3C8CE7"/>
                                     <stop offset="1" stop-color="#00D6E9"/>
                                 </linearGradient>
@@ -249,9 +302,11 @@
                     </a>
                     <a href="#">
                         <svg width="7" height="9" viewBox="0 0 7 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z" stroke="url(#paint0_linear_89_6608)"/>
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
                             <defs>
-                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07" gradientUnits="userSpaceOnUse">
+                                <linearGradient id="paint0_linear_89_6608" x1="0" y1="9" x2="9" y2="-3.93402e-07"
+                                                gradientUnits="userSpaceOnUse">
                                     <stop stop-color="#3C8CE7"/>
                                     <stop offset="1" stop-color="#00D6E9"/>
                                 </linearGradient>
@@ -265,7 +320,7 @@
                 </div>
 
             </div>
-            <div class="col-lg-3 col-md-6" >
+            <div class="col-lg-3 col-md-3">
                 <h3 class="text_footer">تابعونا على : </h3>
                 <div class="d-flex justify-content-center justify-content-lg-start">
                     <a href="#">
@@ -287,8 +342,6 @@
                     <a href="#">
                         <img alt="Instagram" src="assets/img/icons/YouTube.svg" class="img-fluid mx-1">
                     </a>
-
-
 
 
                 </div>
