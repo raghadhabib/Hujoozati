@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>حجوزاتي</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/gradiant_logo.svg">
+    <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+    <!-- cdn for mobile input  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+
+    <!-- font awesome files -->
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+<div class="container">
+    <form method="" action="" class="my-4 row">
+<div class="col-12 col-lg-6 col-md-6 pe-3">
+    <label class=" label-form"> صاحب الطلب </label>
+    <input name="name"  type="text" class="form-control mt-2 py-3 text-start gray_text  gray-inp"
+           placeholder="ادخال اسم صاحب الطلب “كامل”" required>
+    <br>
+    <label class="label-form"> رقم الجوال</label>
+    <input name="mobile" id="mobile" type="tel" dir="ltr" class="form-control mt-2 py-3 text-start gray_text gray-inp"
+           placeholder=" ادخال رقم الجوال" required>
+    <br>
+    <label class="label-form"> البريد الإلكتروني <span class="gray_text"> (اختياري)</span></label>
+    <input name="email"  type="email" class="form-control mt-2 py-3 text-start gray_text gray-inp "
+           placeholder="  ادخال البريد الالكتروني" required>
+    <br>
+    <div class="form-control mt-2 py-3 text-start gray_text gray-inp ">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+            <div class="d-flex justify-content-start label-form">
+                الحجز لشخص اخر
+            </div>
+            <div class="d-flex justify-content-end">
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider  slider_on_off round"></span>
+                </label>
+            </div>
+        </div>
+        <span class="gray_text text-center" style="font-size: 11px">في حالة تفعيل هذا الخيار يشير ان الطلب لغير صاحب الحساب في التطبيق</span>
+    </div>
+    <hr>
+    <label class="label-form"> تاريخ الحجز <span class="gray_text"> (من تاريخ)</span></label>
+    <input name="date"  type="date" dir="rtl" class="form-control mt-2 py-3 text-start text gray-inp "
+           required>
+    <br>
+    <label class="label-form"> تاريخ نهاية الحجز  <span class="gray_text"> (الى تاريخ)</span></label>
+    <input name="date"  type="date" dir="rtl" class="form-control mt-2 py-3 text-start text gray-inp "  required>
+    <br>
+    <label class="label-form" for="time"> الوقت  <span class="gray_text">(ساعة بدأ الحجز)</span></label>
+    <input type="time" id="time" name="appt" min="09:00" max="18:00" class="form-control my-2 py-3 text-start gray-inp" required>
+</div>
+<div class=" col-12 col-lg-6 col-md-6">
+    <label class="label-form"> عدد الأشخاص <span class="gray_text"> (فوق عمر 14 سنة)</span></label>
+    <input name="num"  type="number" class="form-control mt-2 py-3 text-start gray_text gray-inp "
+           placeholder="يرجى ادخال عدد الاشخاص " required>
+    <br>
+    <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex ">
+            <label class="label-form"> يوجد أطفال  <span class="gray_text">(أقل من عمر 14 سنة)</span></label>
+        </div>
+        <div class="d-flex justify-content-end">
+            <label class="switch">
+                <input type="checkbox">
+                <span class="slider  slider_on_off round"></span>
+            </label>
+        </div>
+    </div>
+    <input name="num"  type="number" class="form-control mt-2 py-3 text-start gray_text gray-inp "
+           placeholder="يرجى ادخال عدد الاشخاص " required>
+    <hr class="my-4">
+
+    <label  class="label-form">  ارفاق ملف <span class="gray_text"> (اختياري)</span></label>
+    <br>
+    <input  type="file" id="upload-file" class="form-control ">
+    <label class="  d-flex align-items-center uploadlabel mt-2 p-2 w-50" for="upload-file">
+        <svg class="me-1" width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6911 0.110583C10.2284 -0.000499591 9.74865 -0.000271186 9.11366 3.08906e-05L5.7587 6.26003e-05C4.95373 4.98449e-05 4.28937 3.9354e-05 3.74818 0.0442567C3.18608 0.0901819 2.66937 0.188746 2.18404 0.436037C1.43139 0.819531 0.819469 1.43145 0.435975 2.1841C0.188684 2.66944 0.0901201 3.18614 0.0441949 3.74824C-2.21543e-05 4.28943 -1.19522e-05 4.95378 4.11647e-07 5.75875V14.2414C-1.19522e-05 15.0463 -2.2158e-05 15.7107 0.0441949 16.2519C0.0901201 16.814 0.188684 17.3307 0.435975 17.816C0.819469 18.5687 1.43139 19.1806 2.18404 19.5641C2.66937 19.8114 3.18608 19.9099 3.74818 19.9559C4.28937 20.0001 4.95372 20.0001 5.75868 20.0001H10.2413C11.0463 20.0001 11.7106 20.0001 12.2518 19.9559C12.8139 19.9099 13.3306 19.8114 13.816 19.5641C14.5686 19.1806 15.1805 18.5687 15.564 17.816C15.8113 17.3307 15.9099 16.814 15.9558 16.2519C16 15.7107 16 15.0463 16 14.2414L16 6.8864C16.0003 6.25142 16.0006 5.77161 15.8895 5.30892C15.7915 4.90078 15.6299 4.5106 15.4106 4.15271C15.1619 3.74699 14.8225 3.40789 14.3733 2.95909L13.041 1.62678C12.5922 1.17756 12.2531 0.838129 11.8474 0.589502C11.4895 0.370188 11.0993 0.20857 10.6911 0.110583ZM9 2.00006H5.8C4.94342 2.00006 4.36113 2.00084 3.91104 2.03761C3.47262 2.07343 3.24842 2.13836 3.09202 2.21805C2.7157 2.4098 2.40973 2.71576 2.21799 3.09208C2.1383 3.24848 2.07337 3.47269 2.03755 3.9111C2.00078 4.36119 2 4.94348 2 5.80006V14.2001C2 15.0566 2.00078 15.6389 2.03755 16.089C2.07337 16.5274 2.1383 16.7516 2.21799 16.908C2.40973 17.2844 2.7157 17.5903 3.09202 17.7821C3.24842 17.8618 3.47262 17.9267 3.91104 17.9625C4.36113 17.9993 4.94342 18.0001 5.8 18.0001H10.2C11.0566 18.0001 11.6389 17.9993 12.089 17.9625C12.5274 17.9267 12.7516 17.8618 12.908 17.7821C13.2843 17.5903 13.5903 17.2844 13.782 16.908C13.8617 16.7516 13.9266 16.5274 13.9624 16.089C13.9992 15.6389 14 15.0566 14 14.2001V7.00006H12C10.3431 7.00006 9 5.65692 9 4.00006V2.00006ZM13.56 5.00006C13.4398 4.85796 13.2479 4.66216 12.887 4.30128L11.6988 3.11306C11.3379 2.75218 11.1421 2.56026 11 2.44009V4.00006C11 4.55235 11.4477 5.00006 12 5.00006H13.56Z" fill="#B5BEC8"/>
+        </svg>
+        اضافة ملف
+    </label>
+    <br>
+    <label  class="label-form">  ارفاق صورة <span class="gray_text"> (اختياري)</span></label>
+    <br>
+    <input  type="file" id="upload-pic" class="form-control ">
+    <label class=" d-flex align-items-center uploadlabel mt-2 p-2 w-50" for="upload-pic">
+        <svg class="me-1" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.01178 2.00006C7.79315 2.00006 8.02085 2.00649 8.22425 2.05532C8.42832 2.10432 8.62341 2.18513 8.80236 2.29478C8.98072 2.40408 9.14627 2.56055 9.69878 3.11306L10.2929 3.70717C10.4804 3.89471 10.7348 4.00006 11 4.00006H14.2C15.0566 4.00006 15.6389 4.00084 16.089 4.03761C16.5274 4.07343 16.7516 4.13836 16.908 4.21805C17.2843 4.4098 17.5903 4.71576 17.782 5.09208C17.8617 5.24848 17.9266 5.47269 17.9624 5.9111C17.9992 6.36119 18 6.94348 18 7.80006V10.2001C18 11.0566 17.9992 11.6389 17.9624 12.089C17.9266 12.5274 17.8617 12.7516 17.782 12.908C17.5903 13.2844 17.2843 13.5903 16.908 13.7821C16.7516 13.8618 16.5274 13.9267 16.089 13.9625C15.6389 13.9993 15.0566 14.0001 14.2 14.0001H5.8C4.94342 14.0001 4.36113 13.9993 3.91104 13.9625C3.47262 13.9267 3.24842 13.8618 3.09202 13.7821C2.7157 13.5903 2.40973 13.2844 2.21799 12.908C2.1383 12.7516 2.07337 12.5274 2.03755 12.089C2.00078 11.6389 2 11.0566 2 10.2001V5.80006C2 4.94348 2.00078 4.36119 2.03755 3.9111C2.07337 3.47269 2.1383 3.24848 2.21799 3.09208C2.40973 2.71576 2.7157 2.4098 3.09202 2.21805C3.24842 2.13836 3.47262 2.07343 3.91104 2.03761C4.36113 2.00084 4.94342 2.00006 5.8 2.00006H7.01178ZM8.69114 0.110583C8.22845 -0.000499695 7.74865 -0.00027129 7.11366 3.07868e-05L7.01178 6.29733e-05L5.7587 6.24965e-05C4.95373 4.97411e-05 4.28937 3.92502e-05 3.74817 0.0442566C3.18608 0.0901818 2.66937 0.188746 2.18404 0.436037C1.43139 0.81953 0.819468 1.43145 0.435975 2.1841C0.188684 2.66944 0.0901197 3.18614 0.0441945 3.74824C-2.25787e-05 4.28943 -1.23698e-05 4.95378 0 5.75875V5.75876V10.2414V10.2414C-1.23698e-05 11.0463 -2.2579e-05 11.7107 0.0441945 12.2519C0.0901197 12.814 0.188684 13.3307 0.435975 13.816C0.819468 14.5687 1.43139 15.1806 2.18404 15.5641C2.66937 15.8114 3.18608 15.9099 3.74817 15.9559C4.28937 16.0001 4.95373 16.0001 5.7587 16.0001H5.75873H14.2413H14.2413C15.0463 16.0001 15.7106 16.0001 16.2518 15.9559C16.8139 15.9099 17.3306 15.8114 17.816 15.5641C18.5686 15.1806 19.1805 14.5687 19.564 13.816C19.8113 13.3307 19.9099 12.814 19.9558 12.2519C20 11.7107 20 11.0463 20 10.2414V7.75874C20 6.95378 20 6.28943 19.9558 5.74824C19.9099 5.18614 19.8113 4.66944 19.564 4.1841C19.1805 3.43145 18.5686 2.81953 17.816 2.43604C17.3306 2.18875 16.8139 2.09018 16.2518 2.04426C15.7106 2.00004 15.0463 2.00005 14.2413 2.00006H14.2413L11.4142 2.00006L11.113 1.69884L11.041 1.62678C10.5922 1.17756 10.2531 0.838129 9.84735 0.589502C9.48947 0.370187 9.09929 0.20857 8.69114 0.110583ZM9 6.5C9 7.32843 8.32843 8 7.5 8C6.67157 8 6 7.32843 6 6.5C6 5.67157 6.67157 5 7.5 5C8.32843 5 9 5.67157 9 6.5ZM13.7068 10.2955L11.7236 8.29886C11.3247 7.89729 10.6751 7.89729 10.2762 8.29886L8.29302 10.2954C7.66631 10.9264 8.1132 12.0002 9.00249 12.0002H12.9973C13.8866 12.0002 14.3335 10.9264 13.7068 10.2955Z" fill="#B5BEC8"/>
+        </svg>
+
+        اضافة صورة
+    </label>
+    <br>
+    <label for="notes" class="label-form">
+        ملاحظات
+    </label>
+    <textarea name="textarea" rows="12" cols="40" id="notes" class=" form-control mt-2 py-3 text-start ps-0 gray_text  gray-inp">
+             يرجى اضافة اي ملاحظات خاصة بالخدمة
+           </textarea>
+
+
+
+
+
+
+</div>
+</form>
+</div>
+</body>
+</html>

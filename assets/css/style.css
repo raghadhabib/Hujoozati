@@ -437,7 +437,7 @@ position: relative;
 }
 .gray_text{
     color: #6E7E89;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 22px;
 }
@@ -553,11 +553,7 @@ position: relative;
     list-style: none;
 
 }
-.service-ul{
 
-    /*list-style-image: url(../img/list_square.svg);*/
-
-}
 .checked {
     color: #FEBA02;
 }
@@ -684,6 +680,7 @@ input:checked + .slider:before {
     border-radius: 8px;
     border: 1px solid var(--main-color);
     font-size: 14px;
+    color: var(--main-color);
 
 }
 
@@ -701,6 +698,108 @@ input[type="file"]{
 }
 
 
+/******************** start style profile page *********************************/
+.list_link{
+    color: var(--second-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+.white_card{
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
+}
+.blue_circle{
+    background:var(--main-color);
+    border-radius: 50%;
+    width: fit-content;
+    overflow: hidden;
+}
+/* from sal7ly  */
+.upload_profile_input{
+    display: none;
+}
+.custom-file-upload {
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    padding:0 3px 0 3px;
+    cursor: pointer;
+    border: 5px solid white;
+
+
+}
+.upload_profile_div{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: var(--backGround-color);
+    border: 2px solid white;
+    position: absolute;
+    top:32%;
+    right: 30%;
+    cursor: pointer;
+    z-index: 2;
+}
+.clicked{
+    color: var(--main-color);
+}
+
+/**************** waiting order style***********************/
+.radius_all {
+    background-color: var(--backGround-color);
+    border-radius: 32px;}
+
+.tap_clicked{
+    color: white;
+}
+
+.btn-order-active{
+    font-weight: 400;
+    font-size: 13px;
+    color: #FFFFFF;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 23px;
+
+    padding-top:0;
+}
+.btn-order.active {
+    background:var(--main-color);
+    color:white;
+}
+/* to determine which button fill and which one stock */
+
+.radius_all > li:nth-child(1) .btn-order.active path{
+    stroke: white;
+    fill: none;
+}
+.radius_all > li:nth-child(2) .btn-order.active path{
+    stroke: white;
+    fill: none;
+}
+.radius_all > li:nth-child(3) .btn-order.active path{
+
+    fill: white;
+    stroke: none;
+
+}
+
+
+.btn-order{
+    font-weight: 400;
+    font-size: 13px;
+    border: none;
+    background-color: transparent;
+    border-radius: 23px;
+    width: 100%;
+    padding: 9px;
+    color: #0B3D74;
+}
+.img-card-waiting{
+   object-fit: cover;
+    border-radius: 0 16px 16px 0;
+}
 /**************** footer style ***************************/
 
 .text_footer{
