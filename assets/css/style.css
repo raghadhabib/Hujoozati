@@ -800,6 +800,26 @@ input[type="file"]{
    object-fit: cover;
     border-radius: 0 16px 16px 0;
 }
+
+
+/*waiting order details */
+.form-check-input:checked {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.re-order-btn{
+    border-radius: 33px;
+    border: 1px solid #272265;
+    background: #F8F8F8;
+}
+
+.service_rating_btn{
+    border-radius: 4px;
+    border: 1px solid #F3AD39;
+    background:  #F8F8F8;
+    color:#F3AD39 ;
+    font-size:12px ;
+}
 /**************** footer style ***************************/
 
 .text_footer{
