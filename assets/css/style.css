@@ -615,8 +615,8 @@ position: relative;
 .switch {
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 48px;
+    height: 28px;
 }
 
 /* Hide default HTML checkbox */
@@ -631,7 +631,7 @@ position: relative;
     position: absolute;
     cursor: pointer;
     top: 0;
-    left: 0;
+    left: -7px;
     right: 0;
     bottom: 0;
     background-color: #ccc;
@@ -642,10 +642,10 @@ position: relative;
 .slider:before {
     position: absolute;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 24px;
+    width: 24px;
     left: 4px;
-    bottom: 4px;
+    bottom: 2px;
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
@@ -801,7 +801,16 @@ input[type="file"]{
     border-radius: 0 16px 16px 0;
 }
 
-
+.custome_blue_circle{
+    background:var(--main-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+.card_waiting_img{
+    border-radius: 11px;
+}
 /*waiting order details */
 .form-check-input:checked {
     background-color: var(--main-color);
@@ -819,6 +828,131 @@ input[type="file"]{
     background:  #F8F8F8;
     color:#F3AD39 ;
     font-size:12px ;
+}
+/*style model rating service */
+.model_img{
+    border-radius: 100%;
+    width: 93px;
+    height: 70px;
+    object-fit: contain;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #F3AD39;
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #F3AD39;
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #F3AD39;
+}
+
+
+
+/**********  setting style ******************/
+.lang_switch {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 28px;
+}
+
+.lang_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider_lang{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: -7px;
+    right: 0;
+    bottom: 0;
+    background-color: #F8F8F8;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider_lang:before {
+    position: absolute;
+    content: attr(data-on);
+    height: 24px;
+    width: 24px;
+    left: 4px;
+    bottom: 2px;
+    background-color: black;
+    -webkit-transition: .4s;
+    transition: .4s;
+    text-align: center;
+    /*line-height: 24px;*/
+    color: white;
+    font-weight: 300;
+
+}
+
+input:checked + .slider_lang:before {
+    content: attr(data-off);
+}
+
+input:checked + .slider_lang {
+    background-color: #F8F8F8;
+}
+
+input:focus + .slider_lang {
+    box-shadow: 0 0 1px #F8F8F8;
+}
+
+input:checked + .slider_lang:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider_lang.round {
+    border-radius: 34px;
+}
+
+.slider_lang.round:before {
+    border-radius: 50%;
+}
+.modal-content{
+    border:none;
+    border-radius: 20px;
+}
+
+/**************  style fav page ***********************/
+.fav-img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 11px 11px 0;
 }
 /**************** footer style ***************************/
 
@@ -847,7 +981,7 @@ footer a{
 
 
 /******** about us images  ***********/
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .left-side-images {
         max-width: unset;
         align-items: center;
@@ -858,5 +992,7 @@ footer a{
         width: 100%;
         object-fit: contain;
     }
+
+
 }
 
