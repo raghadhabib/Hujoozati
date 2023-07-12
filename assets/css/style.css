@@ -994,6 +994,27 @@ footer a{
     text-decoration: none;
 
 }
+
+
+/**************** notification style **********************************/
+.notification{
+    border-radius: 16px;
+    background: white;
+    border: 1px solid var(--main-color);
+}
+.notification_icon_div{
+    border-radius: 10px;
+
+}
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: 0;
+    /* left: -17%; */
+    margin-top: 1.125rem;
+    margin-right: -17rem;
+    /* left: 66%; */
+    width: 21rem;}
+
 /*************** end footer style   ******************************/
 
 
