@@ -448,6 +448,7 @@ position: relative;
     line-height: 30px;
     color: white;
     border-radius: 8px;
+    border: 1px solid var(--main-color);
 }
 .btn_submit_1:hover{
     background-color:white;
@@ -967,6 +968,18 @@ input:checked + .slider_lang:before {
     height: 100%;
     object-fit: cover;
     border-radius: 0 11px 11px 0;
+}
+
+
+/*************** style wallet page ****************************/
+.up_btn{
+    position: relative;
+    transform: translateY(40%);
+}
+.record-data{
+    font-size: 14px;
+    font-weight: 500;
+
 }
 /**************** footer style ***************************/
 
