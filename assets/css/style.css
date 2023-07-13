@@ -122,6 +122,11 @@ input::-webkit-inner-spin-button {
 .card h6{
     font-size: 14px;
 }
+.custom-header-btn > .active{
+    border-radius: 27px;
+    border: 1px solid white;
+    background-color: #2C79CD !important;
+}
 .home-row a{
    font-size: 10px;
     color: black;
@@ -215,22 +220,23 @@ input::-webkit-inner-spin-button {
     display: none;
 
 }
-.search_input{
+.search_input-tab{
     background: none;
     border-radius: 4px;
     border: 1px solid rgba(255, 255, 255, 0.26);
+    border-left: none;
     color: white;
     font-size: 12px;
 position: relative;
     font-weight: 300;
 }
-.search_icon{
+.search_icon-tab{
     background: none;
     color: white;
-    border: none;
-    position: absolute;
-    right: 92%;
-    top:20%
+    border: 1px solid rgba(255, 255, 255, 0.26);/* Set your desired border properties */
+ border-right: none;
+
+
 }
 .filter{
     border-radius: 4px;
@@ -239,13 +245,14 @@ position: relative;
 }
 .header-drop{
     border-radius: 4px;
-    background: rgba(251, 251, 251, 0.13);
+    background-color: rgba(251, 251, 251, 0.13);
+    border: none;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
 
 }
-.header-drop a{
-    color: white;
-    font-size: 12px;
-}
+
 .tab{
     color: white;
     font-size: 10px;
@@ -267,7 +274,12 @@ position: relative;
     position: relative;
     display: inline-block;
 }
+#serach::placeholder {
+    color: rgba(255, 255, 255, 0.59);
+    font-weight: 300;
+    font-size: 12px;
 
+}
 .search-input {
     display: none;
     padding: 5px;
@@ -281,6 +293,7 @@ position: relative;
     outline: none;
     border: none;
     box-shadow: none;
+
 
 }
 .search-icon {
@@ -603,7 +616,12 @@ position: relative;
     font-size: 12px;
     font-weight: 700;
 }
-
+.blue_circle_hotel{
+    background-color: var(--main-color);
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
 /*************  start style order info page*****************************************************/
 .label-form{
     font-size: 14px;
@@ -1000,13 +1018,16 @@ footer a{
 .notification{
     border-radius: 16px;
     background: white;
-    border: 1px solid var(--main-color);
+    border: 1px solid var(--second-color);
 }
 .notification_icon_div{
     border-radius: 10px;
 
 }
 .dropdown-menu[data-bs-popper] {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 366px;
     top: 100%;
     right: 0;
     /* left: -17%; */
@@ -1014,6 +1035,22 @@ footer a{
     margin-right: -17rem;
     /* left: 66%; */
     width: 21rem;}
+
+/*start scrollbar */
+.dropdown-menu[data-bs-popper] ::-webkit-scrollbar {
+    width: 7px;
+
+}
+
+.dropdown-menu[data-bs-popper] ::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+}
+
+.dropdown-menu[data-bs-popper] ::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 20px;
+    border-width: 3px;
+}
 
 /*************** end footer style   ******************************/
 
