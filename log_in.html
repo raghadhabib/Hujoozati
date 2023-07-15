@@ -6,11 +6,14 @@
   <title>حجوزاتي</title>
   <link rel="icon" type="image/x-icon" href="assets/img/gradiant_logo.svg">
   <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+
   <!-- cdn for mobile input  -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
 
   <!-- font awesome files -->
-  <link rel="stylesheet" href="assets/css/all.css">
+
+<!--  <link rel="stylesheet" href="assets/css/all.css">-->
+  <link rel="stylesheet" href="assets/css/font_awesome_eye.css">
   <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 
@@ -20,15 +23,20 @@
 <header>
   <nav class="white_nav navbar navbar-expand-lg  ">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
+
         <img src="assets/img/Glogo.svg" alt="">
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler">
+                    <svg width="34" height="26" viewBox="0 0 34 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3479 21.124H0V25.3656H11.3479V21.124Z" fill="#0B3D74"></path>
+                        <path d="M22.6738 10.5625H0.148438V14.8041H22.6738V10.5625Z" fill="#0B3D74"></path>
+                        <path d="M34 0H0.148438V4.24156H34V0Z" fill="#0B3D74"></path>
+                    </svg>
 
+                </span>
+      </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
         <ul class="navbar-nav align-items-center mx-auto mb-2 mb-lg-0 white-header">
@@ -45,10 +53,10 @@
           </li>
 
         </ul>
-
+      </div>
         <ul class="nav align-items-center  mb-2 mb-lg-0 white-header justify-content-center">
           <li class="nav-item ">
-            <a class="nav-link " href="#" >تنزيل التطبيق</a>
+            <a class="nav-link d-none d-lg-block" href="#" >تنزيل التطبيق</a>
           </li>
 
           <li class="nav-item ">
@@ -71,7 +79,7 @@
         </ul>
 
       </div>
-    </div>
+
   </nav>
 </header>
 <!-- end header section -->
@@ -79,7 +87,7 @@
   <div class="row ">
     <div class="col-12 col-lg-6 mt-5">
       <div class="row justify-content-center ">
-        <div class="col-lg-8 ">
+        <div class="col-12 col-lg-8 ">
           <div class="text-center">
         <h2 class="title_log">تسجيل الدخول</h2>
             <div> <p class="gray_text"> مرحبا بك في تطبيق حجوزاتي
@@ -95,19 +103,21 @@
         </span></p></div>
 
         </div>
-<!--   wrap tab in mobile (need to edit in responsive) /  appear in right side in tablet -->
-        <ul class="nav nav-tabs " id="myTab" role="tablist">
-          <li class="nav-item" role="presentation">
+<!--   wrap tab in mobile (need to edit in responsive) /  appear in right side in tablet //// done -->
+          <div class="d-flex justify-content-around">
+        <ul class="nav nav-tabs login-ul flex-nowrap " id="myTab" role="tablist">
+          <li class="nav-item create-sec-tab" role="presentation">
             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
               <svg width="12" height="20" viewBox="0 0 12 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.87029 0H1.45495C1.26369 8.27764e-05 1.07433 0.0378563 0.897679 0.111161C0.721029 0.184467 0.560558 0.291866 0.425437 0.427222C0.290316 0.562577 0.183195 0.723234 0.110196 0.900011C0.0371977 1.07679 -0.000247601 1.26622 1.23205e-06 1.45747V18.5444C1.19577e-06 18.9304 0.15327 19.3005 0.426107 19.5734C0.698945 19.8464 1.06901 19.9998 1.45495 20H9.87029C10.2563 19.9998 10.6265 19.8464 10.8996 19.5735C11.1726 19.3006 11.3262 18.9305 11.3265 18.5444V1.45747C11.3263 1.0712 11.1729 0.700771 10.8999 0.427514C10.6269 0.154258 10.2566 0.000501621 9.87029 0ZM10.2351 16.2045H1.09137V2.45858H10.2351V16.2045ZM7.6137 1.47893H3.71217V1.0535H7.61433L7.6137 1.47893ZM9.28326 1.28452C9.28326 1.38346 9.24395 1.47834 9.174 1.5483C9.10404 1.61826 9.00915 1.65757 8.91021 1.65757C8.81127 1.65757 8.71639 1.61826 8.64643 1.5483C8.57647 1.47834 8.53716 1.38346 8.53716 1.28452C8.53716 1.18558 8.57647 1.0907 8.64643 1.02074C8.71639 0.950775 8.81127 0.911472 8.91021 0.911472C9.00915 0.911472 9.10404 0.950775 9.174 1.02074C9.24395 1.0907 9.28326 1.18558 9.28326 1.28452ZM7.43885 18.4472H3.88575V17.354H7.43885V18.4472Z" fill="#3B8EE8"/>
+                <path d="M9.87029 0H1.45495C1.26369 8.27764e-05 1.07433 0.0378563 0.897679 0.111161C0.721029 0.184467 0.560558 0.291866 0.425437 0.427222C0.290316 0.562577 0.183195 0.723234 0.110196 0.900011C0.0371977 1.07679 -0.000247601 1.26622 1.23205e-06 1.45747V18.5444C1.19577e-06 18.9304 0.15327 19.3005 0.426107 19.5734C0.698945 19.8464 1.06901 19.9998 1.45495 20H9.87029C10.2563 19.9998 10.6265 19.8464 10.8996 19.5735C11.1726 19.3006 11.3262 18.9305 11.3265 18.5444V1.45747C11.3263 1.0712 11.1729 0.700771 10.8999 0.427514C10.6269 0.154258 10.2566 0.000501621 9.87029 0ZM10.2351 16.2045H1.09137V2.45858H10.2351V16.2045ZM7.6137 1.47893H3.71217V1.0535H7.61433L7.6137 1.47893ZM9.28326 1.28452C9.28326 1.38346 9.24395 1.47834 9.174 1.5483C9.10404 1.61826 9.00915 1.65757 8.91021 1.65757C8.81127 1.65757 8.71639 1.61826 8.64643 1.5483C8.57647 1.47834 8.53716 1.38346 8.53716 1.28452C8.53716 1.18558 8.57647 1.0907 8.64643 1.02074C8.71639 0.950775 8.81127 0.911472 8.91021 0.911472C9.00915 0.911472 9.10404 0.950775 9.174 1.02074C9.24395 1.0907 9.28326 1.18558 9.28326 1.28452ZM7.43885 18.4472H3.88575V17.354H7.43885V18.4472Z" fill="#7797BB"/>
               </svg>
+
               <span class="tab-title ms-2">رقم الهاتف </span>
 
 
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item create-sec-tab" role="presentation">
             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
               <svg width="20" height="23" viewBox="0 0 20 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M17.0045 4.33496C15.1339 2.45996 12.6429 1.42871 9.99554 1.42871C4.53125 1.42871 0.0848214 5.87514 0.0848214 11.3394C0.0848214 13.085 0.540179 14.7903 1.40625 16.2948L0 21.4287L5.25446 20.0492C6.70089 20.8394 8.33036 21.2546 9.99107 21.2546H9.99554C15.4554 21.2546 20 16.8082 20 11.3439C20 8.69657 18.875 6.20996 17.0045 4.33496ZM9.99554 19.585C8.51339 19.585 7.0625 19.1876 5.79911 18.4376L5.5 18.2591L2.38393 19.076L3.21429 16.0359L3.01786 15.7234C2.19196 14.4109 1.75893 12.8975 1.75893 11.3394C1.75893 6.79925 5.45536 3.10282 10 3.10282C12.2009 3.10282 14.2679 3.95996 15.8214 5.518C17.375 7.07603 18.3304 9.143 18.3259 11.3439C18.3259 15.8885 14.5357 19.585 9.99554 19.585ZM14.5134 13.4153C14.2679 13.2903 13.0491 12.6921 12.8214 12.6117C12.5938 12.5269 12.4286 12.4867 12.2634 12.7367C12.0982 12.9867 11.625 13.5403 11.4777 13.71C11.3348 13.8751 11.1875 13.8975 10.942 13.7725C9.48661 13.0448 8.53125 12.4734 7.57143 10.826C7.31696 10.3885 7.82589 10.4198 8.29911 9.47335C8.37946 9.30818 8.33929 9.16532 8.27679 9.04032C8.21429 8.91532 7.71875 7.69657 7.51339 7.20103C7.3125 6.71889 7.10714 6.78585 6.95536 6.77693C6.8125 6.768 6.64732 6.768 6.48214 6.768C6.31696 6.768 6.04911 6.8305 5.82143 7.07603C5.59375 7.32603 4.95536 7.92425 4.95536 9.143C4.95536 10.3617 5.84375 11.5403 5.96429 11.7055C6.08929 11.8707 7.70982 14.3707 10.1964 15.4466C11.7679 16.1251 12.3839 16.1832 13.1696 16.0671C13.6473 15.9957 14.6339 15.4689 14.8393 14.8885C15.0446 14.3082 15.0446 13.8126 14.9821 13.71C14.9241 13.5984 14.7589 13.5359 14.5134 13.4153Z" fill="#7797BB"/>
@@ -116,7 +126,7 @@
 
             </button>
           </li>
-          <li class="nav-item" role="presentation">
+          <li class="nav-item create-sec-tab" role="presentation">
             <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.2422 2.96875H1.75781C0.786602 2.96875 0 3.76023 0 4.72656V15.2734C0 16.2455 0.792383 17.0312 1.75781 17.0312H18.2422C19.2053 17.0312 20 16.2488 20 15.2734V4.72656C20 3.76195 19.2165 2.96875 18.2422 2.96875ZM17.996 4.14062L11.243 10.8581C10.9109 11.1901 10.4695 11.3729 10 11.3729C9.53047 11.3729 9.08906 11.1901 8.75594 10.857L2.00398 4.14062H17.996ZM1.17188 15.0349V4.96582L6.23586 10.0031L1.17188 15.0349ZM2.00473 15.8594L7.06672 10.8296L7.9284 11.6867C8.48176 12.2401 9.21746 12.5448 10 12.5448C10.7825 12.5448 11.5182 12.2401 12.0705 11.6878L12.9333 10.8296L17.9953 15.8594H2.00473ZM18.8281 15.0349L13.7641 10.0031L18.8281 4.96582V15.0349Z" fill="#7797BB"/>
@@ -125,7 +135,7 @@
 
             </button>
           </li>
-        </ul>
+        </ul></div>
         <div class="tab-content" id="myTabContent">
           <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <form class="mt-4">
@@ -136,16 +146,10 @@
               <div class="password-container">
                 <label class="text"> كلمة المرور</label>
                 <br>
-                <input type="password" class="form-control my-3 py-3 gray_text gray-inp" id="password-input"
+                <input type="password" class="form-control my-3 py-3 gray_text gray-inp id_password" autocomplete="current-password"
                        placeholder="يرجى إضافة كلمة المرور " required>
-                <span class="toggle-password_3" onclick="togglePasswordVisibility()">
-                                <svg width="24"
-                                     height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                            d="M11.7333 0C6.4 0 1.84533 3.31733 0 8C1.84533 12.6827 6.4 16 11.7333 16C17.0667 16 21.6213 12.6827 23.4667 8C21.6213 3.31733 17.0667 0 11.7333 0ZM11.7333 13.3333C8.78933 13.3333 6.4 10.944 6.4 8C6.4 5.056 8.78933 2.66667 11.7333 2.66667C14.6773 2.66667 17.0667 5.056 17.0667 8C17.0667 10.944 14.6773 13.3333 11.7333 13.3333ZM11.7333 4.8C9.96267 4.8 8.53333 6.22933 8.53333 8C8.53333 9.77067 9.96267 11.2 11.7333 11.2C13.504 11.2 14.9333 9.77067 14.9333 8C14.9333 6.22933 13.504 4.8 11.7333 4.8Z"
-                                            fill="#7A7C7B"/>
-                                </svg>
-                            </span>
+
+                <i class="far fa-eye togglePassword" style=" cursor: pointer;"></i>
               </div>
 
               <div class="d-flex justify-content-end">
@@ -174,20 +178,14 @@
               <div class="password-container">
                 <label class=" text"> كلمة المرور</label>
                 <br>
-                <input type="password" class="form-control my-3 py-3 gray_text gray-inp" id="password-input2"
+                <input type="password" class="form-control my-3 py-3 gray_text gray-inp id_password" autocomplete="current-password"
                        placeholder="يرجى إضافة كلمة المرور " required>
-                <span class="toggle-password_3" onclick="togglePasswordVisibility()">
-                                <svg width="24"
-                                     height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                            d="M11.7333 0C6.4 0 1.84533 3.31733 0 8C1.84533 12.6827 6.4 16 11.7333 16C17.0667 16 21.6213 12.6827 23.4667 8C21.6213 3.31733 17.0667 0 11.7333 0ZM11.7333 13.3333C8.78933 13.3333 6.4 10.944 6.4 8C6.4 5.056 8.78933 2.66667 11.7333 2.66667C14.6773 2.66667 17.0667 5.056 17.0667 8C17.0667 10.944 14.6773 13.3333 11.7333 13.3333ZM11.7333 4.8C9.96267 4.8 8.53333 6.22933 8.53333 8C8.53333 9.77067 9.96267 11.2 11.7333 11.2C13.504 11.2 14.9333 9.77067 14.9333 8C14.9333 6.22933 13.504 4.8 11.7333 4.8Z"
-                                            fill="#7A7C7B"/>
-                                </svg>
-                            </span>
+
+                <i class="far fa-eye togglePassword" style=" cursor: pointer;"></i>
               </div>
 
               <div class="d-flex justify-content-end">
-                <a href=" # " class=" text"> نسيت كلمة المرور؟</a>
+                <a href="password.html" class=" text"> نسيت كلمة المرور؟</a>
 
               </div>
 
@@ -209,20 +207,14 @@
               <div class="password-container">
                 <label class=" text"> كلمة المرور</label>
                 <br>
-                <input type="password" class="form-control my-3 py-3 gray_text gray-inp" id="password-input3"
+                <input type="password" class="form-control my-3 py-3 gray_text gray-inp id_password" autocomplete="current-password"
                        placeholder="يرجى إضافة كلمة المرور " required>
-                <span class="toggle-password_3" onclick="togglePasswordVisibility()">
-                                <svg width="24"
-                                     height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                            d="M11.7333 0C6.4 0 1.84533 3.31733 0 8C1.84533 12.6827 6.4 16 11.7333 16C17.0667 16 21.6213 12.6827 23.4667 8C21.6213 3.31733 17.0667 0 11.7333 0ZM11.7333 13.3333C8.78933 13.3333 6.4 10.944 6.4 8C6.4 5.056 8.78933 2.66667 11.7333 2.66667C14.6773 2.66667 17.0667 5.056 17.0667 8C17.0667 10.944 14.6773 13.3333 11.7333 13.3333ZM11.7333 4.8C9.96267 4.8 8.53333 6.22933 8.53333 8C8.53333 9.77067 9.96267 11.2 11.7333 11.2C13.504 11.2 14.9333 9.77067 14.9333 8C14.9333 6.22933 13.504 4.8 11.7333 4.8Z"
-                                            fill="#7A7C7B"/>
-                                </svg>
-                            </span>
+
+                <i class="far fa-eye togglePassword" style=" cursor: pointer;"></i>
               </div>
 
               <div class="d-flex justify-content-end">
-                <a href=" # " class=" text"> نسيت كلمة المرور؟</a>
+                <a href="password.html" class=" text"> نسيت كلمة المرور؟</a>
 
               </div>
 
@@ -403,6 +395,22 @@
 </footer>
 <!--end footer section-->
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/min.js"></script>
+<script src="assets/js/jquery.min.js"></script>
+
+<script>
+  const togglePassword = document.querySelectorAll('.togglePassword');
+  const password = document.querySelectorAll('.id_password');
+  for (const eye of togglePassword ) {
+    for (const input of password){
+
+  eye.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = input.getAttribute('type') === 'password' ? 'text' : 'password';
+    input.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+  })}};
+
+</script>
 </body>
 </html>

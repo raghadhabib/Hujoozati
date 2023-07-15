@@ -17,12 +17,43 @@ body{
 
 /*}*/
 
+
+.profile-rightSide-list{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
 /*  style for tab  */
 .nav-tabs .nav-link {
     border: none;
 }
+/*start scrollbar */
+.ul-index-btns::-webkit-scrollbar {
+    width: 2px;
 
+}
 
+.ul-index-btns::-webkit-scrollbar-track {
+    background-color: #ebebeb;
+}
+
+.ul-index-btns::-webkit-scrollbar-thumb {
+    background:red;
+    border-radius: 20px;
+    border-width: 3px;
+}
+.ul-index-btns{
+    overflow: auto;
+    max-width: 100%;
+    flex-wrap: nowrap;
+}
+.btn-header{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 1rem;
+    align-items: center;
+
+}
 .navbar-toggler:focus,
 .navbar-toggler:focus-visible {
     outline: none;
@@ -78,6 +109,7 @@ body{
     font-size: 14px;
     font-weight: 300;
 }
+
 
 /*start scrollbar */
 *::-webkit-scrollbar {
@@ -230,6 +262,10 @@ input::-webkit-inner-spin-button {
 position: relative;
     font-weight: 300;
 }
+.search_input-tab:focus{
+    background-color: transparent!important;
+
+}
 .search_icon-tab{
     background: none;
     color: white;
@@ -256,6 +292,7 @@ position: relative;
 .tab{
     color: white;
     font-size: 10px;
+    white-space: nowrap;
 }
 .white_nav{
     background: white;
@@ -382,18 +419,20 @@ position: relative;
 }
 
 /************  start style login page 1 *******************/
-
 .password-container{
+
     position: relative;
 }
-.toggle-password_3 {
+
+.fa-eye{
     position: absolute;
-    left: 5%;
-    top: 54%;
+    top: 61%;
+    right: 89%;
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    color: lightgray;
 }
+
+
 .form-control:focus {
     outline: none;
     box-shadow: none;
@@ -428,6 +467,10 @@ position: relative;
 .active > .tab-title{
     color: var(--main-color);
     position: relative;
+
+}
+.create-sec-tab > .active path{
+    fill:var(--main-color);
 
 }
 .active > .tab-title::before{
@@ -498,6 +541,11 @@ position: relative;
     font-size: 14px;
     font-weight:400;
 
+}
+.rating-profile-img{
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
 }
 
 .Before_After_div{
@@ -580,14 +628,21 @@ position: relative;
     font-weight: 400;
 
 }
-.customer_btn{
+.create-ul > .customer_btn{
     border-radius: 4px;
-    background: var(--second-color) !important;
-    color: white;
+    background: var(--backGround-color);
+
     font-size: 12px;
     font-weight: 400;
 }
-
+.create-tab-title{
+    color: var(--second-color);
+    font-size: 12px;
+    font-weight: 400;
+}
+.create-ul > .customer_btn > .active{
+    background-color: var(--second-color);
+}
 /********************* start style congratulation page  *****************************************/
 .btn_submit_W{
     border: 1px solid var(--main-color);
@@ -723,17 +778,18 @@ input[type="file"]{
     font-size: 12px;
     font-weight: 400;
 }
+.hero-profile-pic{
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 .white_card{
     background: white;
     border-radius: 16px;
     box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
 }
-.blue_circle{
-    background:var(--main-color);
-    border-radius: 50%;
-    width: fit-content;
-    overflow: hidden;
-}
+
 /* from sal7ly  */
 .upload_profile_input{
     display: none;
@@ -742,9 +798,14 @@ input[type="file"]{
     background-color: black;
     border-radius: 100%;
     position: absolute;
-    padding:0 3px 0 3px;
+    padding:11px;
     cursor: pointer;
-    border: 5px solid white;
+    border: 4px solid white;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
 }
@@ -755,10 +816,11 @@ input[type="file"]{
     background-color: var(--backGround-color);
     border: 2px solid white;
     position: absolute;
-    top:32%;
-    right: 30%;
+    top:72%;
+    right: 0;
     cursor: pointer;
     z-index: 2;
+
 }
 .clicked{
     color: var(--main-color);
@@ -772,6 +834,10 @@ input[type="file"]{
 .tap_clicked{
     color: white;
 }
+.all {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 500px;}
 
 .btn-order-active{
     font-weight: 400;
@@ -820,12 +886,8 @@ input[type="file"]{
     border-radius: 0 16px 16px 0;
 }
 
-.custome_blue_circle{
-    background:var(--main-color);
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
+.div-img-profile{
+position: relative;
 }
 .card_waiting_img{
     border-radius: 11px;
@@ -999,6 +1061,11 @@ input:checked + .slider_lang:before {
     font-weight: 500;
 
 }
+.wallet-all{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 250px;
+}
 /**************** footer style ***************************/
 
 .text_footer{
@@ -1023,6 +1090,23 @@ footer a{
 .notification_icon_div{
     border-radius: 10px;
 
+}
+.hero-notification-div{
+    position: relative;
+}
+.hero-notification-div::before{
+    position: absolute;
+    content: "5";
+    width: 13px;
+    height: 13px;
+    background-color: var(--main-color);
+    top:50%;
+    border-radius: 50%;
+    color: white;
+    font-size: 9px;
+    text-align: center;
+    cursor: pointer;
+    left: 60%;
 }
 .dropdown-menu[data-bs-popper] {
     overflow-x: hidden;
@@ -1079,5 +1163,21 @@ footer a{
     }
 
 
+}
+
+.login-ul {
+    min-width: 70%;
+    justify-content: space-around;
+
+}
+
+@media (max-width: 768px) {
+
+
+    .login-ul{
+        width: 100%;
+
+
+    }
 }
 
