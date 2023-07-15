@@ -394,6 +394,9 @@ position: relative;
     font-weight: 400;
     border: none;
 }
+.common-Q-img{
+    margin-top: -17%;
+}
 
 .btn:focus,
 .btn:focus-visible {
@@ -534,7 +537,11 @@ position: relative;
     border-radius: 8px;
 }
 
-
+.code_input{
+    border-radius: 11px;
+    width: 55px;
+    height:55px;
+}
 /************************** start style service details ******************************/
 .gray_page{
     color: #B5BEC8;
@@ -870,7 +877,8 @@ input[type="file"]{
 
 }
 
-
+.price-text{
+    font-size: 14px; color: var(--main-color);}
 .btn-order{
     font-weight: 400;
     font-size: 13px;
@@ -884,6 +892,7 @@ input[type="file"]{
 .img-card-waiting{
    object-fit: cover;
     border-radius: 0 16px 16px 0;
+    width: 100%;
 }
 
 .div-img-profile{
