@@ -28,20 +28,7 @@ body{
     border: none;
 }
 /*start scrollbar */
-.ul-index-btns::-webkit-scrollbar {
-    width: 2px;
 
-}
-
-.ul-index-btns::-webkit-scrollbar-track {
-    background-color: #ebebeb;
-}
-
-.ul-index-btns::-webkit-scrollbar-thumb {
-    background:red;
-    border-radius: 20px;
-    border-width: 3px;
-}
 .ul-index-btns{
     overflow: auto;
     max-width: 100%;
@@ -364,6 +351,7 @@ position: relative;
 .home-btn:hover{
     background: white;
     color: var(--main-color);
+    transition: all 0.4s ease-in-out;
 }
 .search-container {
     position: relative;
@@ -382,7 +370,7 @@ position: relative;
     position: absolute;
     bottom:-3rem;
     right: -1rem;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 .search-input:focus{
     outline: none;
@@ -558,6 +546,12 @@ position: relative;
     font-weight: 300;
     line-height: 22px;
 }
+.gray_text_2{
+    color:#484848;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 22px;
+}
 .btn_submit_1 {
     background: var(--main-color);
     font-weight: 400;
@@ -566,14 +560,18 @@ position: relative;
     color: white;
     border-radius: 8px;
     border: 1px solid var(--main-color);
+
 }
 .btn_submit_1:hover{
     background-color:white;
     color: var(--main-color);
     border: 1px solid var(--main-color);
-    transition: all 0.3s ease-in-out;}
+    transition: all 0.4s ease-in-out;
+}
+
 .btn_submit_1:hover path{
     fill:var(--main-color);
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -715,16 +713,22 @@ position: relative;
     color: var(--main-color);
     border-radius: 8px;
     line-height: 30px;
+    font-weight: 300;
+}
+.congrat-title{
+    font-size: 24px;
+    font-weight: 700
 
 }
 .btn_submit_W:hover{
     background: var(--main-color);
     color: white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.4s ease-in-out;
 
 }
 .btn_submit_W:hover path{
     fill:white;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -741,6 +745,10 @@ position: relative;
     border-radius: 50%;
     width: 38px;
     height: 38px;
+}
+.h-contain{
+    height: 100%;
+    object-fit: contain
 }
 /*************  start style order info page*****************************************************/
 .label-form{
@@ -813,7 +821,9 @@ input:checked + .slider:before {
     border-radius: 50%;
 }
 
-
+.togglePassword{
+    cursor: pointer;
+}
 
 .next-btn{
     border-radius: 8px;
@@ -822,7 +832,16 @@ input:checked + .slider:before {
     color: var(--main-color);
 
 }
+.next-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: all .4s ease-in-out;
 
+}
+.next-btn:hover line, .next-btn:hover path{
+    stroke:white;
+    transition: all .4s ease-in-out;
+}
 /*  test  */
 input[type="file"]{
     display: none;
@@ -934,7 +953,10 @@ input[type="file"]{
     stroke: none;
 
 }
-
+.price-num{
+    font-size: 12px;
+    font-weight: 700
+}
 .price-text{
     font-size: 14px; color: var(--main-color);}
 .btn-order{
@@ -969,13 +991,34 @@ position: relative;
     border: 1px solid #272265;
     background: #F8F8F8;
 }
+.re-order-btn span{
+    color: #272265;
+}
+.re-order-btn:hover span{
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+.re-order-btn:hover{
+    transition: all 0.4s ease-in-out;
+    background-color: #272265 ;
 
+}
+.re-order-btn:hover path{
+    fill: white;
+    transition: all 0.4s ease-in-out;
+}
 .service_rating_btn{
     border-radius: 4px;
     border: 1px solid #F3AD39;
     background:  #F8F8F8;
     color:#F3AD39 ;
     font-size:12px ;
+}
+.service_rating_btn:hover{
+    transition: all 0.4s ease-in-out;
+    background-color: #F3AD39;
+    color: white;
+
 }
 .red_order{
     background: #FAEBEC;
@@ -987,9 +1030,11 @@ position: relative;
 .red_order:hover{
     background: #F33737;
     color: #FAEBEC;
+    transition: all 0.4s ease-in-out;
 }
 .red_order:hover path{
     stroke:  #FAEBEC;
+    transition: all 0.4s ease-in-out;
 }
 /*style model rating service */
 .model_img{
@@ -1025,6 +1070,7 @@ position: relative;
 .rate:not(:checked) > label:hover,
 .rate:not(:checked) > label:hover ~ label {
     color: #F3AD39;
+    transition: all 0.4s ease-in-out;
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
@@ -1032,6 +1078,7 @@ position: relative;
 .rate > input:checked ~ label:hover ~ label,
 .rate > label:hover ~ input:checked ~ label {
     color: #F3AD39;
+    transition: all 0.4s ease-in-out;
 }
 
 
@@ -1058,8 +1105,8 @@ position: relative;
     right: 0;
     bottom: 0;
     background-color: #F8F8F8;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .slider_lang:before {
@@ -1070,8 +1117,8 @@ position: relative;
     left: 4px;
     bottom: 2px;
     background-color: black;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: all 0.4s ease-in-out;;
+    transition: all 0.4s ease-in-out;
     text-align: center;
     /*line-height: 24px;*/
     color: white;
@@ -1116,6 +1163,11 @@ input:checked + .slider_lang:before {
     object-fit: cover;
     border-radius: 0 11px 11px 0;
 }
+.fav-card:hover{
+    box-shadow:  0 20px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.001);
+    transition: all 0.4s ease-in-out;
+}
 
 
 /*************** style wallet page ****************************/
@@ -1144,7 +1196,6 @@ input:checked + .slider_lang:before {
 .text_footer{
     color: white;
     font-size: 12px;
-    /*text-decoration: none;*/
     font-weight: 300;
     line-height: 2.5rem;
 }
@@ -1169,6 +1220,10 @@ footer > .copy-write{
 .notification_icon_div{
     border-radius: 10px;
 
+
+}
+.noti-svg{
+    cursor: pointer;
 }
 .hero-notification-div{
     position: relative;
@@ -1189,37 +1244,29 @@ footer > .copy-write{
 }
 .notification[data-bs-popper] {
     left: 0;
-    transform: translateX(90%);
-    width: 350px;
+    transform: translateX(38%);
+    width: 21rem;
     height: auto;
-    max-height: 80vh;
+    max-height: 55vh;
     overflow-y: scroll;
     background: #FFFFFF;
     box-shadow: 0 0 30px rgb(0 0 0 / 8%);
-    border-radius: 16px
-/*    overflow-x: hidden;*/
-/*    overflow-y: scroll;*/
-/*    height: 366px;*/
-/*    top: 100%;*/
-/*    !* left: -17%; *!*/
-/*    margin-top: 1.125rem;*/
-/*    margin-right: -17rem;*/
-/*    !* left: 66%; *!*/
-/*    width: 21rem;*/
-/*transform: translateX(50%);*/
+    border-radius: 16px;
+    top:2.5rem;
+
 }
 
 /*start scrollbar */
-.dropdown-menu[data-bs-popper] ::-webkit-scrollbar {
+.notification[data-bs-popper] ::-webkit-scrollbar {
     width: 7px;
 
 }
 
-.dropdown-menu[data-bs-popper] ::-webkit-scrollbar-track {
+.notification[data-bs-popper] ::-webkit-scrollbar-track {
     background-color: #ebebeb;
 }
 
-.dropdown-menu[data-bs-popper] ::-webkit-scrollbar-thumb {
+.notification[data-bs-popper] ::-webkit-scrollbar-thumb {
     background: var(--main-color);
     border-radius: 20px;
     border-width: 3px;
@@ -1239,7 +1286,7 @@ footer > .copy-write{
 
 
 /******** about us images  ***********/
-@media (max-width: 767px) {
+@media (max-width: 834px) {
     .left-side-images {
         max-width: unset;
         align-items: center;
@@ -1270,3 +1317,9 @@ footer > .copy-write{
     }
 }
 
+@media (max-width: 428px) {
+    .fav-img{
+        border-radius: 0 0 11px 11px ;
+    }
+
+}
