@@ -275,6 +275,17 @@ input::-webkit-inner-spin-button {
     fill: white;
     transition: all 0.4s ease-in-out;
 }
+.sel{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+.sel:focus{
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.sel > option{
+    /*background-color: red;*/
+}
 .next-arrow i {
     color: black;
     font-size: 16px;
@@ -668,6 +679,17 @@ position: relative;
     box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
 
 }
+.white_card_collapse_bottom{
+    border-radius: 0 0 16px 16px;
+    background: #FFF;
+    box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
+
+}
+.white_card_collapse_top{
+    border-radius:16px 16px 0 0 ;
+    background: #FFF;
+    box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
+}
 .li_blue{
     color: var(--second-color);
     font-size: 12px;
@@ -739,6 +761,11 @@ position: relative;
     color: var(--second-color);
     font-size: 12px;
     font-weight: 700;
+}
+.service-btn:hover{
+    background-color: var(--second-color);
+    color: white;
+    transition: all .4s ease-in-out;
 }
 .blue_circle_hotel{
     background-color: var(--main-color);
@@ -1320,6 +1347,12 @@ footer > .copy-write{
 @media (max-width: 428px) {
     .fav-img{
         border-radius: 0 0 11px 11px ;
+    }
+
+}
+@media (max-width: 428px) {
+    .img-card-waiting{
+        border-radius: 0 0 16px 16px
     }
 
 }

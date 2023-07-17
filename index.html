@@ -7,19 +7,13 @@
     <link rel="icon" type="image/x-icon" href="assets/img/gradiant_logo.svg">
     <link rel="stylesheet" href="assets/fonts/stylesheet.css">
     <!-- cdn for mobile input  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
 
     <!-- font awesome files -->
     <link rel="stylesheet" href="assets/css/all.css">
     <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
-
-    <link rel="stylesheet" href="assets/css/preloader.css">
-    <link rel="stylesheet" href="assets/css/backToTop.css">
-    <script src="assets/js/pace.min.js"></script>
-    <link rel="stylesheet" href="assets/css/pace-theme-default.min.css">
-    <link rel="stylesheet" href="assets/css/flash.css">
+    <link rel="stylesheet" href="assets/css/aos.css" />
     <link rel="stylesheet" href="assets/css/style.css">
 
 
@@ -335,26 +329,24 @@
                                 <button class="input-group-text search_icon-tab" id="basic-addon1"><i class="fas fa-search"></i>
                                 </button>
                             </div>
-                                <div>
-                                    <button class="filter btn align-items-center d-flex h-100 w-100 justify-content-center mx-2">
-                                        <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_2_5126)">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59576 2.56056H16.4472C16.9665 2.56056 17.3876 2.98162 17.3876 3.50101C17.3876 4.02039 16.9665 4.44144 16.4472 4.44144H7.59576C7.20751 5.53604 6.16219 6.32232 4.9362 6.32232C3.71021 6.32232 2.66485 5.53604 2.27664 4.44144H0.94874C0.429354 4.44144 0.00830078 4.02039 0.00830078 3.50101C0.00830078 2.98162 0.429354 2.56056 0.94874 2.56056H2.27664C2.66489 1.46597 3.71021 0.679688 4.9362 0.679688C6.16219 0.679688 7.20751 1.46597 7.59576 2.56056ZM3.99672 3.50141C3.99672 4.01997 4.41859 4.44186 4.93715 4.44186C5.45571 4.44186 5.87759 4.01997 5.87759 3.50141C5.87759 2.98285 5.45571 2.56097 4.93715 2.56097C4.41859 2.56097 3.99672 2.98285 3.99672 3.50141ZM7.59576 13.0936H16.4472C16.9665 13.0936 17.3876 13.5147 17.3876 14.034C17.3876 14.5535 16.9665 14.9745 16.4472 14.9745H7.59576C7.20751 16.0691 6.16219 16.8554 4.9362 16.8554C3.71021 16.8554 2.66485 16.0691 2.27664 14.9745H0.94874C0.429354 14.9745 0.00830078 14.5535 0.00830078 14.034C0.00830078 13.5147 0.429354 13.0936 0.94874 13.0936H2.27664C2.66489 11.9991 3.71021 11.2128 4.9362 11.2128C6.16219 11.2128 7.20755 11.9991 7.59576 13.0936ZM3.99672 14.0342C3.99672 14.5527 4.41859 14.9747 4.93715 14.9747C5.45571 14.9747 5.87759 14.5527 5.87759 14.0342C5.87759 13.5156 5.45571 13.0938 4.93715 13.0938C4.41859 13.0938 3.99672 13.5156 3.99672 14.0342ZM16.4472 7.82716H15.1193C14.731 6.73256 13.6857 5.94628 12.4597 5.94628C11.2337 5.94628 10.1884 6.73256 9.80015 7.82716H0.94874C0.429354 7.82716 0.00830078 8.24821 0.00830078 8.7676C0.00830078 9.28698 0.429354 9.70803 0.94874 9.70803H9.80015C10.1884 10.8026 11.2337 11.5889 12.4597 11.5889C13.6857 11.5889 14.731 10.8026 15.1193 9.70803H16.4472C16.9665 9.70803 17.3876 9.28698 17.3876 8.7676C17.3876 8.24821 16.9665 7.82716 16.4472 7.82716ZM12.4606 9.70819C11.9421 9.70819 11.5201 9.28631 11.5201 8.76775C11.5201 8.2492 11.9421 7.82732 12.4606 7.82732C12.9792 7.82732 13.401 8.2492 13.401 8.76775C13.401 9.28631 12.9792 9.70819 12.4606 9.70819Z" fill="white"></path>
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_2_5126">
-                                                    <rect width="18" height="17" fill="white"></rect>
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </button>
-                                </div>
                             </div>
                     </div>
-
-
-                        <div class=" col-6 col-lg-2 ">
-                            <select class="form-select  p-3 align-items-center d-flex header-drop mx-lg-2" aria-label="Default select example">
+                        <div class="col-2 col-lg-1">
+                            <button class="filter btn align-items-center d-flex h-100 w-100 justify-content-center">
+                                <svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_2_5126)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.59576 2.56056H16.4472C16.9665 2.56056 17.3876 2.98162 17.3876 3.50101C17.3876 4.02039 16.9665 4.44144 16.4472 4.44144H7.59576C7.20751 5.53604 6.16219 6.32232 4.9362 6.32232C3.71021 6.32232 2.66485 5.53604 2.27664 4.44144H0.94874C0.429354 4.44144 0.00830078 4.02039 0.00830078 3.50101C0.00830078 2.98162 0.429354 2.56056 0.94874 2.56056H2.27664C2.66489 1.46597 3.71021 0.679688 4.9362 0.679688C6.16219 0.679688 7.20751 1.46597 7.59576 2.56056ZM3.99672 3.50141C3.99672 4.01997 4.41859 4.44186 4.93715 4.44186C5.45571 4.44186 5.87759 4.01997 5.87759 3.50141C5.87759 2.98285 5.45571 2.56097 4.93715 2.56097C4.41859 2.56097 3.99672 2.98285 3.99672 3.50141ZM7.59576 13.0936H16.4472C16.9665 13.0936 17.3876 13.5147 17.3876 14.034C17.3876 14.5535 16.9665 14.9745 16.4472 14.9745H7.59576C7.20751 16.0691 6.16219 16.8554 4.9362 16.8554C3.71021 16.8554 2.66485 16.0691 2.27664 14.9745H0.94874C0.429354 14.9745 0.00830078 14.5535 0.00830078 14.034C0.00830078 13.5147 0.429354 13.0936 0.94874 13.0936H2.27664C2.66489 11.9991 3.71021 11.2128 4.9362 11.2128C6.16219 11.2128 7.20755 11.9991 7.59576 13.0936ZM3.99672 14.0342C3.99672 14.5527 4.41859 14.9747 4.93715 14.9747C5.45571 14.9747 5.87759 14.5527 5.87759 14.0342C5.87759 13.5156 5.45571 13.0938 4.93715 13.0938C4.41859 13.0938 3.99672 13.5156 3.99672 14.0342ZM16.4472 7.82716H15.1193C14.731 6.73256 13.6857 5.94628 12.4597 5.94628C11.2337 5.94628 10.1884 6.73256 9.80015 7.82716H0.94874C0.429354 7.82716 0.00830078 8.24821 0.00830078 8.7676C0.00830078 9.28698 0.429354 9.70803 0.94874 9.70803H9.80015C10.1884 10.8026 11.2337 11.5889 12.4597 11.5889C13.6857 11.5889 14.731 10.8026 15.1193 9.70803H16.4472C16.9665 9.70803 17.3876 9.28698 17.3876 8.7676C17.3876 8.24821 16.9665 7.82716 16.4472 7.82716ZM12.4606 9.70819C11.9421 9.70819 11.5201 9.28631 11.5201 8.76775C11.5201 8.2492 11.9421 7.82732 12.4606 7.82732C12.9792 7.82732 13.401 8.2492 13.401 8.76775C13.401 9.28631 12.9792 9.70819 12.4606 9.70819Z" fill="white"></path>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_2_5126">
+                                            <rect width="18" height="17" fill="white"></rect>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class=" col-5 col-lg-2 ">
+                            <select class="form-select sel  p-3 align-items-center d-flex header-drop mx-lg-2" aria-label="Default select example">
                                 <option selected="">فنادق</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -362,8 +354,8 @@
                             </select>
 
                         </div>
-                        <div class=" col-6 col-lg-2 ">
-                            <select class="form-select  header-drop p-3 align-items-center d-flex mx-lg-2" aria-label="Default select example">
+                        <div class=" col-5 col-lg-2 ">
+                            <select class="form-select sel  header-drop p-3 align-items-center d-flex mx-lg-2" aria-label="Default select example">
                                 <option selected="">اختيار التفاصيل</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
@@ -395,7 +387,8 @@
 <section class="mt-5">
     <div class="container">
         <div class="row first_sec">
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="700">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/first.png" class="card-img-top" alt="...">
@@ -459,7 +452,8 @@
                 </div>
                 </a>
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="1000">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/2.png" class="card-img-top" alt="...">
@@ -524,7 +518,8 @@
                 </a>
 
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="1500">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/3.png" class="card-img-top" alt="...">
@@ -589,7 +584,8 @@
                 </a>
 
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="150"
+                 data-aos-duration="2000">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/4.png" class="card-img-top" alt="...">
@@ -657,7 +653,8 @@
 
             <!-- second row   -->
 
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="700">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/5.svg" class="card-img-top" alt="...">
@@ -722,7 +719,8 @@
                 </a>
 
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="1000">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/6.svg" class="card-img-top" alt="...">
@@ -788,7 +786,8 @@
 
 
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="1500">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/7.svg" class="card-img-top" alt="...">
@@ -853,7 +852,8 @@
                 </a>
 
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="150"
+                 data-aos-duration="2000">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/8.svg" class="card-img-top" alt="...">
@@ -922,7 +922,8 @@
 
             <!--  third row card  -->
 
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="700">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/9.svg" class="card-img-top" alt="...">
@@ -988,7 +989,8 @@
 
 
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="1000">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/10.svg" class="card-img-top" alt="...">
@@ -1052,7 +1054,8 @@
                 </div>
                 </a>
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="100"
+                 data-aos-duration="1500">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/11.svg" class="card-img-top" alt="...">
@@ -1117,7 +1120,8 @@
                 </a>
 
             </div>
-            <div class="col-12 col-lg-3 col-md-6 mt-4">
+            <div class="col-12 col-lg-3 col-md-6 mt-4" data-aos="fade-up" data-aos-delay="150"
+                 data-aos-duration="2000">
                 <a href="service_details.html" style="color:black;">
                 <div class="card custom_card">
                     <img src="assets/img/12.svg" class="card-img-top" alt="...">
@@ -1206,7 +1210,8 @@
         <section class="mt-5 home-row">
             <span class="sub-hero-title"> الإقامة والمبيت </span>
             <div class="row mt-4">
-                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0 ">
+                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="200"
+                     data-aos-duration="700">
                     <a href="#">
                         <div class="card d-flex justify-content-center align-items-center p-4 small-index-card ">
                             <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
@@ -1222,7 +1227,8 @@
 
 
                 </div>
-                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0    ">
+                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="100"
+                     data-aos-duration="1000">
                     <a href="#">
                         <div class="card d-flex justify-content-center align-items-center p-4 small-index-card ">
                             <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
@@ -1258,7 +1264,8 @@
                     </a>
 
                 </div>
-                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0 ">
+                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0 " data-aos="fade-up" data-aos-delay="100"
+                     data-aos-duration="1500">
                     <a href="#">
                         <div class="card d-flex justify-content-center align-items-center p-4 small-index-card  ">
                             <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
@@ -1274,7 +1281,8 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0   ">
+                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="100"
+                     data-aos-duration="2000">
                     <a href="#">
                         <div class="card d-flex justify-content-center align-items-center p-4 small-index-card">
                             <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
@@ -1298,7 +1306,8 @@
                     </a>
 
                 </div>
-                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0  ">
+                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0  " data-aos="fade-up" data-aos-delay="100"
+                     data-aos-duration="2500">
                     <a href="#">
                         <div class="card d-flex justify-content-center align-items-center p-4 small-index-card">
                             <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
@@ -1329,7 +1338,8 @@
                     </a>
 
                 </div>
-                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0  ">
+                <div class="col-6 col-lg-2 col-md-4 mt-4 mt-lg-0  " data-aos="fade-up" data-aos-delay="100"
+                     data-aos-duration="3000">
                     <a href="#">
                         <div class="card d-flex justify-content-center align-items-center p-4 small-index-card ">
                             <svg width="35" height="35" viewBox="0 0 35 35" fill="none"
@@ -2099,10 +2109,15 @@
 <!--end footer section-->
 
 <!-- JavaScript animation -->
-<script src="./assets/js/backToTop.js"></script>
+
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/slick.min.js"></script>
+<script src="assets/js/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 
 <!--slider script -->
 <script type="text/javascript">
