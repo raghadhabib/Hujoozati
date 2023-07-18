@@ -607,6 +607,10 @@ position: relative;
     border: 1px solid var(--main-color);
 
 }
+.rounded-inp:hover path{
+    fill: var(--main-color);
+
+}
 .gray-inp{
     background: var(--backGround-color);
     border: none;
@@ -1221,7 +1225,7 @@ input:checked + .slider_lang:before {
 .wallet-all{
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 250px;
+    height: 238px;
 }
 /**************** footer style ***************************/
 .text_footer_hero{

@@ -155,16 +155,21 @@
                         </div>
 
                     </li>
-                    <li class="nav-item ms-2">
-                        <a href="log_in.html" type="button" class="px-3 py-2 align-items-center d-flex login-btn">
-              <span>
+                    <li class="nav-item dropdown ms-2">
+                        <a href="log_in.html" class=" dropdown-toggle px-3 py-2 align-items-center d-flex login-btn"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 19C4 16.2386 6.23858 14 9 14H15C17.7614 14 20 16.2386 20 19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19Z" fill="#CFE0F3"/>
                 <path d="M12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2Z" fill="#0B3D74"/>
                 </svg>
               </span>
-                            تسجيل الدخول</a>
+                            صلاح خطاب
 
+                        </a>
+                        <ul class="dropdown-menu user-ul" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="index.html">تسجيل خروج</a></li>
+
+                        </ul>
                     </li>
                 </ul>
 
@@ -177,8 +182,8 @@
 <div class="container">
     <div class="row mt-5 h-100 ">
         <!--    start right side list          -->
-        <div class="col-12 col-lg-3 col-md-3 ">
-            <ul class="list-group list-group-flush white_card h-100">
+        <div class="col-12 col-lg-3 col-md-3  ">
+            <ul class="list-group list-group-flush white_card_collapse_top">
                 <li class="list-group-item">
                     <div class="d-flex justify-content-between align-items-center py-2">
                         <div class="justify-content-start d-flex">
@@ -195,18 +200,23 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="justify-content-end  d-flex">
-                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M10.5312 13.1875C10.6875 13.0313 10.7656 12.8462 10.7656 12.6325C10.7656 12.4192 10.6875 12.2344 10.5312 12.0781L5.95312 7.5L10.5469 2.90625C10.6927 2.76042 10.7656 2.57813 10.7656 2.35938C10.7656 2.14063 10.6875 1.95312 10.5312 1.79688C10.375 1.64062 10.19 1.5625 9.97625 1.5625C9.76292 1.5625 9.57812 1.64062 9.42187 1.79688L4.17187 7.0625C4.10937 7.125 4.065 7.19271 4.03875 7.26562C4.01292 7.33854 4 7.41667 4 7.5C4 7.58333 4.01292 7.66146 4.03875 7.73438C4.065 7.80729 4.10937 7.875 4.17187 7.9375L9.4375 13.2031C9.58333 13.349 9.76292 13.4219 9.97625 13.4219C10.19 13.4219 10.375 13.3438 10.5312 13.1875Z" fill="#777777"/>
-                            </svg>
-
-
-
-
-
+                        <div class="justify-content-end  d-flex ">
+                            <div class="d-none d-lg-block">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10.5312 13.1875C10.6875 13.0313 10.7656 12.8462 10.7656 12.6325C10.7656 12.4192 10.6875 12.2344 10.5312 12.0781L5.95312 7.5L10.5469 2.90625C10.6927 2.76042 10.7656 2.57813 10.7656 2.35938C10.7656 2.14063 10.6875 1.95312 10.5312 1.79688C10.375 1.64062 10.19 1.5625 9.97625 1.5625C9.76292 1.5625 9.57812 1.64062 9.42187 1.79688L4.17187 7.0625C4.10937 7.125 4.065 7.19271 4.03875 7.26562C4.01292 7.33854 4 7.41667 4 7.5C4 7.58333 4.01292 7.66146 4.03875 7.73438C4.065 7.80729 4.10937 7.875 4.17187 7.9375L9.4375 13.2031C9.58333 13.349 9.76292 13.4219 9.97625 13.4219C10.19 13.4219 10.375 13.3438 10.5312 13.1875Z" fill="#777777"/>
+                                </svg>
+                            </div>
+                            <div class="d-block d-lg-none">
+                                <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fa-sharp fa-solid fa-bars" style="color: var(--second-color);"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </li>
+            </ul>
+            <div class="collapse d-lg-block " id="collapseExample">
+                <ul class="list-group list-group-flush white_card_collapse_bottom">
                 <li class="list-group-item">
                     <div class="d-flex justify-content-between align-items-center py-2">
                         <div class="justify-content-start  d-flex">
@@ -300,7 +310,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item mb-lg-5">
                     <div class="d-flex justify-content-between align-items-center py-2">
                         <div class="justify-content-start  d-flex">
                             <div class="d-flex align-items-center">
@@ -323,7 +333,7 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
+                <li class="list-group-item mt-lg-5">
                     <div class="d-flex justify-content-between align-items-center py-2">
                         <div class="justify-content-start  d-flex">
                             <div class="d-flex align-items-center">
@@ -347,16 +357,17 @@
                     </div>
                 </li>
 
-            </ul>
 
+            </ul>
+            </div>
 
         </div>
         <!-- end right side list      -->
 
         <!-- left side container -->
 
-        <div class="col-12 col-lg-9 col-md-9 white_card py-4" >
-            <div class="container all">
+        <div class="col-12 col-lg-9 col-md-9 " >
+            <div class="container all mt-3 mt-lg-0 white_card py-4">
                 <div class="row gray-inp fav-card " >
                    <div class="col-12 col-lg-4 col-md-4 px-0">
                        <div class="d-flex h-100 w-100 ">
