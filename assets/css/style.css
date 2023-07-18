@@ -599,7 +599,13 @@ position: relative;
     background: var(--main-color);
     color: white;
     font-size: 14px;
-    border:none;
+    border:1px solid var(--main-color);
+}
+.rounded-inp:hover{
+    background: white;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+
 }
 .gray-inp{
     background: var(--backGround-color);
@@ -674,6 +680,7 @@ position: relative;
     border-radius: 50%;
     background: white;
     box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
+    cursor: pointer;
 
 }
 .White_card{
@@ -686,6 +693,7 @@ position: relative;
     border-radius: 0 0 16px 16px;
     background: #FFF;
     box-shadow: 0 0 50px 0 rgba(0, 116, 217, 0.09);
+
 
 }
 .white_card_collapse_top{
@@ -1359,3 +1367,4 @@ footer > .copy-write{
     }
 
 }
+
