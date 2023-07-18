@@ -178,7 +178,7 @@ input::-webkit-inner-spin-button {
 .card h6{
     font-size: 14px;
 }
-.custom-header-btn > .active{
+.category > .active{
     border-radius: 27px;
     border: 1px solid white;
     background-color: #2C79CD !important;
