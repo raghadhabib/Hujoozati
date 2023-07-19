@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>حجوزاتي</title>
+    <link href="../assets/img/gradiant_logo.svg" rel="icon" type="image/x-icon">
+    <link href="../assets/fonts/stylesheet.css" rel="stylesheet">
+    <!-- cdn for mobile input  -->
+
+
+    <!-- font awesome files -->
+    <link href="../assets/css/all.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+
+</head>
+<body>
+<!--start header section -->
+<header>
+    <nav class="white_nav navbar navbar-expand-lg  ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img alt="" src="../assets/img/Glogo.svg">
+            </a>
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+                    data-bs-toggle="collapse" type="button">
+        <span class="navbar-toggler">
+                    <svg fill="none" height="26" viewBox="0 0 34 26" width="34" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.3479 21.124H0V25.3656H11.3479V21.124Z" fill="#0B3D74"></path>
+                        <path d="M22.6738 10.5625H0.148438V14.8041H22.6738V10.5625Z" fill="#0B3D74"></path>
+                        <path d="M34 0H0.148438V4.24156H34V0Z" fill="#0B3D74"></path>
+                    </svg>
+
+                </span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav align-items-center mx-auto mb-2 mb-lg-0 white-header">
+
+                    <li class="nav-item  ">
+                        <a aria-current="page" class="nav-link " href="../index.html">الرئيسية</a>
+                    </li>
+
+                    <li class="nav-item mx-2 ">
+                        <a class="nav-link " href="../about-us.html">من نحن</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="../common.html">الاسئلة الشائعة</a>
+                    </li>
+
+                </ul>
+
+                <ul class="nav align-items-center  mb-2 mb-lg-0 white-header justify-content-center">
+                    <li class="nav-item ">
+                        <a class="nav-link d-none d-lg-inline" href="#">تنزيل التطبيق</a>
+                    </li>
+
+                    <li class="nav-item ">
+                        <a class="nav-link px-0" href="#"><img src="../assets/img/icons/rightHeaderIcon.svg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../assets/img/icons/headertringle.svg"></a>
+                    </li>
+                    <li class="nav-item">
+                        <div class=" dropdown hero-notification-div ">
+                            <svg aria-expanded="false" class=" noti-svg dropdown-toggle" data-bs-toggle="dropdown"
+                                 fill="none" height="24" id="dropdownMenuButton1" viewBox="0 0 24 24" width="24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path clip-rule="evenodd"
+                                      d="M11 3C11 2.44772 11.4477 2 12 2C12.5523 2 13 2.44772 13 3V4C13 4.02774 12.9989 4.05522 12.9967 4.08239C15.836 4.55707 18 7.02582 18 10V11.9574C18 12.3881 18.156 12.8042 18.439 13.1289L19.0834 13.8682C21.1702 16.2623 19.4699 20 16.294 20H14C14 21.1046 13.1046 22 12 22C10.8954 22 10 21.1046 10 20H7.70609C4.53019 20 2.82986 16.2623 4.91668 13.8682L5.56112 13.1289C5.84413 12.8042 6.00004 12.3881 6.00004 11.9574V10C6.00004 7.02585 8.16401 4.55712 11.0033 4.08241C11.0011 4.05523 11 4.02775 11 4V3ZM12 6C9.7909 6 8.00004 7.79086 8.00004 10V11.9574C8.00004 12.8712 7.66924 13.7542 7.06876 14.443L6.42432 15.1824C5.4654 16.2825 6.24672 18 7.70609 18H16.294C17.7534 18 18.5347 16.2825 17.5758 15.1824L16.9313 14.443C16.3308 13.7542 16 12.8712 16 11.9574V10C16 7.79086 14.2092 6 12 6Z"
+                                      fill="#0B3D74"
+                                      fill-rule="evenodd"/>
+                            </svg>
+
+                            <ul aria-labelledby="dropdownMenuButton1" class="dropdown-menu notification pt-3">
+                                <div class="container">
+                                    <h6> الاشعارات</h6>
+                                    <div class="gray-inp mt-4">
+                                        <div class=" p-2 row">
+                                            <div class="col-3 ">
+                                                <div class="notification_icon_div px-1 py-3 mx-0 d-flex align-items-center justify-content-center"
+                                                     style="background: #E5F2ED;">
+                                                    <svg fill="none" height="21" viewBox="0 0 21 21" width="21"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.795 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V5C1 4.46957 1.21071 3.96086 1.58579 3.58579C1.96086 3.21071 2.46957 3 3 3H15C15.5304 3 16.0391 3.21071 16.4142 3.58579C16.7893 3.96086 17 4.46957 17 5V9"
+                                                              stroke="#47D697" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                        <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
+                                                              stroke="#47D697" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                        <path d="M16 14.496V16L17 17M13 1V5V1ZM5 1V5V1ZM1 9H17H1Z"
+                                                              stroke="#47D697" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                    </svg>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-8 ps-0 ">
+                                                <span class="gray_text">طلب مكتمل</span>
+                                                <p class="gray_text">اليوم 19:10</p></div>
+                                            <p class="gray_text">تهانينا ، تم الانتهاء من خدمة حجز فندق الامل بنجاح ،
+                                                يرجى تقييم الاوتيل .</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="gray-inp mt-2">
+                                        <div class=" p-2 row">
+                                            <div class="col-3 ">
+                                                <div class="notification_icon_div px-1 py-3 mx-0 d-flex align-items-center justify-content-center"
+                                                     style="background: #F4EFE9;">
+                                                    <svg fill="none" height="21" viewBox="0 0 21 21" width="21"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.795 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V5C1 4.46957 1.21071 3.96086 1.58579 3.58579C1.96086 3.21071 2.46957 3 3 3H15C15.5304 3 16.0391 3.21071 16.4142 3.58579C16.7893 3.96086 17 4.46957 17 5V9"
+                                                              stroke="#F2851D" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                        <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
+                                                              stroke="#F2851D" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                        <path d="M16 14.496V16L17 17M13 1V5V1ZM5 1V5V1ZM1 9H17H1Z"
+                                                              stroke="#F2851D" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                    </svg>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-8 ps-0 ">
+                                                <span class="gray_text">طلب قيد التنفيذ</span>
+                                                <p class="gray_text">اليوم 19:10</p></div>
+                                            <p class="gray_text">تم انتقال طلب خدمة : طلب فندق بنجاح ، يرجى مراجعة
+                                                تفاصيل الطلب .</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="gray-inp mt-2">
+                                        <div class=" p-2 row">
+                                            <div class="col-3 ">
+                                                <div class="notification_icon_div px-1 py-3 mx-0 d-flex align-items-center justify-content-center"
+                                                     style="background: #E3EAF5;">
+                                                    <svg fill="none" height="17" viewBox="0 0 22 17" width="22"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M11.2391 4.45192e-06C15.4598 4.45192e-06 18.9272 3.30134 19.513 7.58928H22L17.8152 12.6488L13.6304 7.58928H16.4043C16.1369 6.3511 15.4804 5.24543 14.5423 4.45285C13.6042 3.66026 12.4397 3.22757 11.2391 3.22545C9.50543 3.22545 7.975 4.12351 7.00652 5.47693L4.96196 3.01042C5.74453 2.06373 6.70962 1.30526 7.79235 0.786001C8.87507 0.266746 10.0503 -0.00125978 11.2391 4.45192e-06V4.45192e-06ZM10.7609 17C6.55217 17 3.07283 13.6986 2.48696 9.41071H0L4.18478 4.35119C5.5837 6.03348 6.97065 7.72842 8.36956 9.41071H5.59565C5.86314 10.6489 6.51955 11.7546 7.45769 12.5471C8.39583 13.3397 9.56028 13.7724 10.7609 13.7745C12.4946 13.7745 14.025 12.8765 14.9935 11.5231L17.038 13.9896C16.2562 14.9372 15.2913 15.6964 14.2084 16.2157C13.1255 16.735 11.9498 17.0025 10.7609 17V17Z"
+                                                              fill="#0C65EB"/>
+                                                    </svg>
+
+
+                                                </div>
+                                            </div>
+                                            <div class="col-8 ps-0 ">
+                                                <span class="gray_text">تحديث التطبيق</span>
+                                                <p class="gray_text">اليوم 19:10</p></div>
+                                            <p class="gray_text">تم تحديث نسخة التطبيق الى اصدار 12.1 يرجى التحديث.</p>
+
+                                        </div>
+                                    </div>
+                                    <div class="gray-inp mt-2">
+                                        <div class=" p-2 row">
+                                            <div class="col-3 ">
+                                                <div class="notification_icon_div px-1 py-3 mx-0 d-flex align-items-center justify-content-center"
+                                                     style="background: #E5F2ED;">
+                                                    <svg fill="none" height="21" viewBox="0 0 21 21" width="21"
+                                                         xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M9.795 19H3C2.46957 19 1.96086 18.7893 1.58579 18.4142C1.21071 18.0391 1 17.5304 1 17V5C1 4.46957 1.21071 3.96086 1.58579 3.58579C1.96086 3.21071 2.46957 3 3 3H15C15.5304 3 16.0391 3.21071 16.4142 3.58579C16.7893 3.96086 17 4.46957 17 5V9"
+                                                              stroke="#47D697" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                        <path d="M16 20C18.2091 20 20 18.2091 20 16C20 13.7909 18.2091 12 16 12C13.7909 12 12 13.7909 12 16C12 18.2091 13.7909 20 16 20Z"
+                                                              stroke="#47D697" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                        <path d="M16 14.496V16L17 17M13 1V5V1ZM5 1V5V1ZM1 9H17H1Z"
+                                                              stroke="#47D697" stroke-linecap="round"
+                                                              stroke-linejoin="round"
+                                                              stroke-width="2"/>
+                                                    </svg>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-8 ps-0 ">
+                                                <span class="gray_text">طلب مكتمل</span>
+                                                <p class="gray_text">اليوم 19:10</p></div>
+                                            <p class="gray_text">تهانينا ، تم الانتهاء من خدمة حجز فندق الامل بنجاح ،
+                                                يرجى تقييم الاوتيل .</p>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="nav-item dropdown ms-2">
+                        <a href="../log_in.html" class=" dropdown-toggle px-3 py-2 align-items-center d-flex login-btn"  id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M4 19C4 16.2386 6.23858 14 9 14H15C17.7614 14 20 16.2386 20 19C20 20.6569 18.6569 22 17 22H7C5.34315 22 4 20.6569 4 19Z" fill="#CFE0F3"/>
+                <path d="M12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2Z" fill="#0B3D74"/>
+                </svg>
+              </span>
+                            صلاح خطاب
+
+                        </a>
+                        <ul class="dropdown-menu user-ul" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../index.html">تسجيل خروج</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- end header section -->
+<div class="container">
+    <div class="row justify-content-center ">
+        <div class="col-12 col-lg-9 White_card mt-5">
+            <div class="container mt-3">
+                <div class="d-flex justify-content-between align-items-center flex-column flex-md-row  my-3">
+                    <div class="justify-content-start">
+                        <span class="provider-title"> انضم لدينا كمزود خدمة</span>
+                    </div>
+                    <div class="justify-content-end mt-3 mt-md-0">
+                        <ul class="nav nav-pills gray-inp p-2" id="pills-tab" role="tablist">
+                            <li class="nav-item person-li" role="presentation">
+                                <button class="nav-link active px-4" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                                    فرد</button>
+                            </li>
+                            <li class="nav-item company-li" role="presentation">
+                                <button class="nav-link px-4" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                    شركة</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <hr class="mt-1 mb-3">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                <ul class="nav nav-tabs w-100 justify-content-around flex-nowrap " id="myTab" role="tablist">
+                                    <li class="nav-item create-sec-tab" role="presentation">
+                                        <button aria-controls="home" aria-selected="true" class="nav-link active tab-title"
+                                                data-bs-target="#home" data-bs-toggle="tab" id="home-tab" role="tab"
+                                                type="button">
+                                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.9346 5.83087L15.3098 0.206016C15.1778 0.0741977 14.999 0.000105395 14.8125 0L4.96875 0C3.80564 0 2.85938 0.946266 2.85938 2.10938V21.8906C2.85938 23.0537 3.80564 24 4.96875 24H19.0312C20.1944 24 21.1406 23.0537 21.1406 21.8906V6.32812C21.1406 6.13641 21.0601 5.95636 20.9346 5.83087ZM15.5156 2.40061L18.74 5.625H16.2188C15.831 5.625 15.5156 5.30958 15.5156 4.92188V2.40061ZM19.0312 22.5938H4.96875C4.58105 22.5938 4.26562 22.2783 4.26562 21.8906V2.10938C4.26562 1.72167 4.58105 1.40625 4.96875 1.40625H14.1094V4.92188C14.1094 6.08498 15.0556 7.03125 16.2188 7.03125H19.7344V21.8906C19.7344 22.2783 19.419 22.5938 19.0312 22.5938Z"
+                                                      fill="#7797BB"/>
+                                                <path d="M16.2188 9.9375H7.78125C7.39294 9.9375 7.07812 10.2523 7.07812 10.6406C7.07812 11.0289 7.39294 11.3438 7.78125 11.3438H16.2188C16.6071 11.3438 16.9219 11.0289 16.9219 10.6406C16.9219 10.2523 16.6071 9.9375 16.2188 9.9375ZM16.2188 12.75H7.78125C7.39294 12.75 7.07812 13.0648 7.07812 13.4531C7.07812 13.8414 7.39294 14.1562 7.78125 14.1562H16.2188C16.6071 14.1562 16.9219 13.8414 16.9219 13.4531C16.9219 13.0648 16.6071 12.75 16.2188 12.75ZM16.2188 15.5625H7.78125C7.39294 15.5625 7.07812 15.8773 7.07812 16.2656C7.07812 16.6539 7.39294 16.9688 7.78125 16.9688H16.2188C16.6071 16.9688 16.9219 16.6539 16.9219 16.2656C16.9219 15.8773 16.6071 15.5625 16.2188 15.5625ZM13.4062 18.375H7.78125C7.39294 18.375 7.07812 18.6898 7.07812 19.0781C7.07812 19.4664 7.39294 19.7812 7.78125 19.7812H13.4062C13.7946 19.7812 14.1094 19.4664 14.1094 19.0781C14.1094 18.6898 13.7946 18.375 13.4062 18.375Z"
+                                                      fill="#7797BB"/>
+                                            </svg>
+                                            <span class="tab-title">بياناتي </span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item create-sec-tab" role="presentation">
+                                        <button aria-controls="profile" aria-selected="false" class="nav-link tab-title"
+                                                data-bs-target="#profile" data-bs-toggle="tab" id="profile-tab" role="tab"
+                                                type="button">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0002 11.6665C10.2363 11.6665 10.4343 11.5865 10.5943 11.4265C10.7543 11.2665 10.8341 11.0687 10.8335 10.8332V9.1665H12.5002C12.7363 9.1665 12.9343 9.0865 13.0943 8.9265C13.2543 8.7665 13.3341 8.56873 13.3335 8.33317C13.3335 8.09706 13.2535 7.899 13.0935 7.739C12.9335 7.579 12.7357 7.49928 12.5002 7.49984H10.8335V5.83317C10.8335 5.59706 10.7535 5.399 10.5935 5.239C10.4335 5.079 10.2357 4.99928 10.0002 4.99984C9.76405 4.99984 9.566 5.07984 9.406 5.23984C9.246 5.39984 9.16627 5.59762 9.16683 5.83317V7.49984H7.50016C7.26405 7.49984 7.066 7.57984 6.906 7.73984C6.746 7.89984 6.66627 8.09761 6.66683 8.33317C6.66683 8.56928 6.74683 8.76734 6.90683 8.92734C7.06683 9.08734 7.26461 9.16706 7.50016 9.1665H9.16683V10.8332C9.16683 11.0693 9.24683 11.2673 9.40683 11.4273C9.56683 11.5873 9.76461 11.6671 10.0002 11.6665ZM10.0002 16.1248C11.6946 14.5693 12.9516 13.1559 13.771 11.8848C14.5904 10.6137 15.0002 9.48539 15.0002 8.49984C15.0002 6.98595 14.5174 5.7465 13.5518 4.7815C12.5863 3.8165 11.4024 3.33373 10.0002 3.33317C8.59738 3.33317 7.41322 3.81595 6.44766 4.7815C5.48211 5.74706 4.99961 6.9865 5.00016 8.49984C5.00016 9.48595 5.40988 10.6146 6.22933 11.8857C7.04877 13.1568 8.30572 14.5698 10.0002 16.1248ZM10.0002 18.0207C9.88905 18.0207 9.77794 17.9998 9.66683 17.9582C9.55572 17.9165 9.4585 17.8609 9.37516 17.7915C7.34738 15.9998 5.8335 14.3365 4.8335 12.8015C3.8335 11.2665 3.3335 9.83261 3.3335 8.49984C3.3335 6.4165 4.00377 4.75678 5.34433 3.52067C6.68489 2.28456 8.23683 1.6665 10.0002 1.6665C11.7641 1.6665 13.3163 2.28456 14.6568 3.52067C15.9974 4.75678 16.6674 6.4165 16.6668 8.49984C16.6668 9.83317 16.1668 11.2673 15.1668 12.8023C14.1668 14.3373 12.6529 16.0004 10.6252 17.7915C10.5418 17.8609 10.4446 17.9165 10.3335 17.9582C10.2224 17.9998 10.1113 18.0207 10.0002 18.0207Z" fill="#7797BB"/>
+                                            </svg>
+
+
+                                            <span class="tab-title">  عنواني </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content w-100" id="myTabContent">
+                                    <div aria-labelledby="home-tab" class="tab-pane fade show active " id="home" role="tabpanel">
+                                        <form action="" class="mt-4 row" method=" ">
+                                            <div class="col-12 col-lg-6 col-md-6 pe-3">
+                                                <label class=" label-form"> الاسم كامل </label>
+                                                <input class="form-control mt-2 py-3 text-start gray_text  gray-inp" name="name"
+                                                       placeholder="ادخال  الاسم كامل"
+                                                       required type="text">
+                                                <br>
+                                                <label class="label-form"> رقم الجوال</label>
+                                                <input class="form-control mt-2 py-3 text-start gray_text gray-inp" dir="ltr"
+                                                       name="mobile"
+                                                       placeholder=" ادخال رقم الجوال"
+                                                       required type="tel">
+                                                <br>
+                                                <label class="label-form">
+                                                    رقم الهوية
+                                                </label>
+                                                <input class="form-control mt-2 py-3 text-start gray_text gray-inp " name="ID"
+                                                       placeholder="  ادخال رقم الهوية"
+                                                       required type="number">
+
+                                                <hr class="my-4">
+
+                                                <label class="label-form"> شهادة مزاولة النشاط </label>
+                                                <br>
+                                                <div class="row">
+
+                                                    <div class="col-6">
+                                                        <input class="form-control " id="file" onchange="loadFile(event)"
+                                                               type="file">
+                                                        <label class="  d-flex align-items-center uploadlabel mt-2 p-2"
+                                                               for="file">
+                                                            <svg class="me-1" fill="none" height="20" viewBox="0 0 16 20" width="16"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path clip-rule="evenodd"
+                                                                      d="M10.6911 0.110583C10.2284 -0.000499591 9.74865 -0.000271186 9.11366 3.08906e-05L5.7587 6.26003e-05C4.95373 4.98449e-05 4.28937 3.9354e-05 3.74818 0.0442567C3.18608 0.0901819 2.66937 0.188746 2.18404 0.436037C1.43139 0.819531 0.819469 1.43145 0.435975 2.1841C0.188684 2.66944 0.0901201 3.18614 0.0441949 3.74824C-2.21543e-05 4.28943 -1.19522e-05 4.95378 4.11647e-07 5.75875V14.2414C-1.19522e-05 15.0463 -2.2158e-05 15.7107 0.0441949 16.2519C0.0901201 16.814 0.188684 17.3307 0.435975 17.816C0.819469 18.5687 1.43139 19.1806 2.18404 19.5641C2.66937 19.8114 3.18608 19.9099 3.74818 19.9559C4.28937 20.0001 4.95372 20.0001 5.75868 20.0001H10.2413C11.0463 20.0001 11.7106 20.0001 12.2518 19.9559C12.8139 19.9099 13.3306 19.8114 13.816 19.5641C14.5686 19.1806 15.1805 18.5687 15.564 17.816C15.8113 17.3307 15.9099 16.814 15.9558 16.2519C16 15.7107 16 15.0463 16 14.2414L16 6.8864C16.0003 6.25142 16.0006 5.77161 15.8895 5.30892C15.7915 4.90078 15.6299 4.5106 15.4106 4.15271C15.1619 3.74699 14.8225 3.40789 14.3733 2.95909L13.041 1.62678C12.5922 1.17756 12.2531 0.838129 11.8474 0.589502C11.4895 0.370188 11.0993 0.20857 10.6911 0.110583ZM9 2.00006H5.8C4.94342 2.00006 4.36113 2.00084 3.91104 2.03761C3.47262 2.07343 3.24842 2.13836 3.09202 2.21805C2.7157 2.4098 2.40973 2.71576 2.21799 3.09208C2.1383 3.24848 2.07337 3.47269 2.03755 3.9111C2.00078 4.36119 2 4.94348 2 5.80006V14.2001C2 15.0566 2.00078 15.6389 2.03755 16.089C2.07337 16.5274 2.1383 16.7516 2.21799 16.908C2.40973 17.2844 2.7157 17.5903 3.09202 17.7821C3.24842 17.8618 3.47262 17.9267 3.91104 17.9625C4.36113 17.9993 4.94342 18.0001 5.8 18.0001H10.2C11.0566 18.0001 11.6389 17.9993 12.089 17.9625C12.5274 17.9267 12.7516 17.8618 12.908 17.7821C13.2843 17.5903 13.5903 17.2844 13.782 16.908C13.8617 16.7516 13.9266 16.5274 13.9624 16.089C13.9992 15.6389 14 15.0566 14 14.2001V7.00006H12C10.3431 7.00006 9 5.65692 9 4.00006V2.00006ZM13.56 5.00006C13.4398 4.85796 13.2479 4.66216 12.887 4.30128L11.6988 3.11306C11.3379 2.75218 11.1421 2.56026 11 2.44009V4.00006C11 4.55235 11.4477 5.00006 12 5.00006H13.56Z"
+                                                                      fill="#B5BEC8"
+                                                                      fill-rule="evenodd"></path>
+                                                            </svg>
+                                                            اضافة ملف
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-6 ">
+
+                                                        <img class="w-100 " id="output"/>
+
+
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <label class="label-form"> صورة الهوية</span></label>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <input class="form-control " id="file2" onchange="loadFile2(event)"
+                                                               type="file">
+                                                        <label class=" d-flex align-items-center uploadlabel mt-2 p-2 "
+                                                               for="file2">
+                                                            <svg class="me-1" fill="none" height="20" viewBox="0 0 16 20" width="16"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path clip-rule="evenodd"
+                                                                      d="M10.6911 0.110583C10.2284 -0.000499591 9.74865 -0.000271186 9.11366 3.08906e-05L5.7587 6.26003e-05C4.95373 4.98449e-05 4.28937 3.9354e-05 3.74818 0.0442567C3.18608 0.0901819 2.66937 0.188746 2.18404 0.436037C1.43139 0.819531 0.819469 1.43145 0.435975 2.1841C0.188684 2.66944 0.0901201 3.18614 0.0441949 3.74824C-2.21543e-05 4.28943 -1.19522e-05 4.95378 4.11647e-07 5.75875V14.2414C-1.19522e-05 15.0463 -2.2158e-05 15.7107 0.0441949 16.2519C0.0901201 16.814 0.188684 17.3307 0.435975 17.816C0.819469 18.5687 1.43139 19.1806 2.18404 19.5641C2.66937 19.8114 3.18608 19.9099 3.74818 19.9559C4.28937 20.0001 4.95372 20.0001 5.75868 20.0001H10.2413C11.0463 20.0001 11.7106 20.0001 12.2518 19.9559C12.8139 19.9099 13.3306 19.8114 13.816 19.5641C14.5686 19.1806 15.1805 18.5687 15.564 17.816C15.8113 17.3307 15.9099 16.814 15.9558 16.2519C16 15.7107 16 15.0463 16 14.2414L16 6.8864C16.0003 6.25142 16.0006 5.77161 15.8895 5.30892C15.7915 4.90078 15.6299 4.5106 15.4106 4.15271C15.1619 3.74699 14.8225 3.40789 14.3733 2.95909L13.041 1.62678C12.5922 1.17756 12.2531 0.838129 11.8474 0.589502C11.4895 0.370188 11.0993 0.20857 10.6911 0.110583ZM9 2.00006H5.8C4.94342 2.00006 4.36113 2.00084 3.91104 2.03761C3.47262 2.07343 3.24842 2.13836 3.09202 2.21805C2.7157 2.4098 2.40973 2.71576 2.21799 3.09208C2.1383 3.24848 2.07337 3.47269 2.03755 3.9111C2.00078 4.36119 2 4.94348 2 5.80006V14.2001C2 15.0566 2.00078 15.6389 2.03755 16.089C2.07337 16.5274 2.1383 16.7516 2.21799 16.908C2.40973 17.2844 2.7157 17.5903 3.09202 17.7821C3.24842 17.8618 3.47262 17.9267 3.91104 17.9625C4.36113 17.9993 4.94342 18.0001 5.8 18.0001H10.2C11.0566 18.0001 11.6389 17.9993 12.089 17.9625C12.5274 17.9267 12.7516 17.8618 12.908 17.7821C13.2843 17.5903 13.5903 17.2844 13.782 16.908C13.8617 16.7516 13.9266 16.5274 13.9624 16.089C13.9992 15.6389 14 15.0566 14 14.2001V7.00006H12C10.3431 7.00006 9 5.65692 9 4.00006V2.00006ZM13.56 5.00006C13.4398 4.85796 13.2479 4.66216 12.887 4.30128L11.6988 3.11306C11.3379 2.75218 11.1421 2.56026 11 2.44009V4.00006C11 4.55235 11.4477 5.00006 12 5.00006H13.56Z"
+                                                                      fill="#B5BEC8"
+                                                                      fill-rule="evenodd"></path>
+                                                            </svg>
+
+                                                            اضافة ملف
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="w-100 " id="output2"/>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="form-check">
+                                                    <input class="form-check-input noti-svg" type="checkbox" value="" id="flexCheckChecked2" checked="">
+                                                    <label class="form-check-label gray_text" for="flexCheckChecked2">
+                                                        أوافق على سياسة الإستخدام
+                                                    </label>
+                                                </div>
+
+                                            </div>
+                                            <div class=" col-12 col-lg-6 col-md-6">
+
+                                                <label class="label-form">
+                                                    صورة الحساب
+                                                </label>
+                                                <br>
+                                                <div class="row">
+
+                                                    <div class="col-3">
+                                                        <input class="form-control " id="file3" onchange="loadFile3(event)"
+                                                               type="file">
+                                                        <label class=" gray-inp justify-content-center d-flex align-items-center noti-svg  mt-2 p-3"
+                                                               for="file3">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M18 9C17.7167 9 17.479 8.904 17.287 8.712C17.095 8.52 16.9993 8.28267 17 8V7H16C15.7167 7 15.479 6.904 15.287 6.712C15.095 6.52 14.9993 6.28267 15 6C15 5.71667 15.096 5.479 15.288 5.287C15.48 5.095 15.7173 4.99934 16 5H17V4C17 3.71667 17.096 3.479 17.288 3.287C17.48 3.095 17.7173 2.99934 18 3C18.2833 3 18.521 3.096 18.713 3.288C18.905 3.48 19.0007 3.71734 19 4V5H20C20.2833 5 20.521 5.096 20.713 5.288C20.905 5.48 21.0007 5.71734 21 6C21 6.28334 20.904 6.521 20.712 6.713C20.52 6.905 20.2827 7.00067 20 7H19V8C19 8.28334 18.904 8.521 18.712 8.713C18.52 8.905 18.2827 9.00067 18 9ZM7 17H17C17.2 17 17.35 16.9083 17.45 16.725C17.55 16.5417 17.5333 16.3667 17.4 16.2L14.65 12.525C14.55 12.3917 14.4167 12.325 14.25 12.325C14.0833 12.325 13.95 12.3917 13.85 12.525L11.25 16L9.4 13.525C9.3 13.3917 9.16667 13.325 9 13.325C8.83334 13.325 8.7 13.3917 8.6 13.525L6.6 16.2C6.46667 16.3667 6.45 16.5417 6.55 16.725C6.65 16.9083 6.8 17 7 17ZM5 21C4.45 21 3.979 20.804 3.587 20.412C3.195 20.02 2.99934 19.5493 3 19V5C3 4.45 3.196 3.979 3.588 3.587C3.98 3.195 4.45067 2.99934 5 3H13C13.2833 3 13.521 3.096 13.713 3.288C13.905 3.48 14.0007 3.71734 14 4V7C14 7.28334 14.096 7.521 14.288 7.713C14.48 7.905 14.7173 8.00067 15 8H16V9C16 9.28334 16.096 9.521 16.288 9.713C16.48 9.905 16.7173 10.0007 17 10H20C20.2833 10 20.521 10.096 20.713 10.288C20.905 10.48 21.0007 10.7173 21 11V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H5Z" fill="black"/>
+                                                            </svg>
+
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-6 ">
+
+                                                        <img class="w-100 " id="output3"/>
+
+
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <label class="label-form">
+                                                    صور وصف النشاط التجاري
+                                                </label>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <input class="form-control " id="file4" onchange="loadFile4(event)"
+                                                               type="file">
+                                                        <label class=" d-flex align-items-center justify-content-center gray-inp mt-2 p-3 noti-svg "
+                                                               for="file4">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M18 9C17.7167 9 17.479 8.904 17.287 8.712C17.095 8.52 16.9993 8.28267 17 8V7H16C15.7167 7 15.479 6.904 15.287 6.712C15.095 6.52 14.9993 6.28267 15 6C15 5.71667 15.096 5.479 15.288 5.287C15.48 5.095 15.7173 4.99934 16 5H17V4C17 3.71667 17.096 3.479 17.288 3.287C17.48 3.095 17.7173 2.99934 18 3C18.2833 3 18.521 3.096 18.713 3.288C18.905 3.48 19.0007 3.71734 19 4V5H20C20.2833 5 20.521 5.096 20.713 5.288C20.905 5.48 21.0007 5.71734 21 6C21 6.28334 20.904 6.521 20.712 6.713C20.52 6.905 20.2827 7.00067 20 7H19V8C19 8.28334 18.904 8.521 18.712 8.713C18.52 8.905 18.2827 9.00067 18 9ZM7 17H17C17.2 17 17.35 16.9083 17.45 16.725C17.55 16.5417 17.5333 16.3667 17.4 16.2L14.65 12.525C14.55 12.3917 14.4167 12.325 14.25 12.325C14.0833 12.325 13.95 12.3917 13.85 12.525L11.25 16L9.4 13.525C9.3 13.3917 9.16667 13.325 9 13.325C8.83334 13.325 8.7 13.3917 8.6 13.525L6.6 16.2C6.46667 16.3667 6.45 16.5417 6.55 16.725C6.65 16.9083 6.8 17 7 17ZM5 21C4.45 21 3.979 20.804 3.587 20.412C3.195 20.02 2.99934 19.5493 3 19V5C3 4.45 3.196 3.979 3.588 3.587C3.98 3.195 4.45067 2.99934 5 3H13C13.2833 3 13.521 3.096 13.713 3.288C13.905 3.48 14.0007 3.71734 14 4V7C14 7.28334 14.096 7.521 14.288 7.713C14.48 7.905 14.7173 8.00067 15 8H16V9C16 9.28334 16.096 9.521 16.288 9.713C16.48 9.905 16.7173 10.0007 17 10H20C20.2833 10 20.521 10.096 20.713 10.288C20.905 10.48 21.0007 10.7173 21 11V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H5Z" fill="black"/>
+                                                            </svg>
+
+
+
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="w-100 " id="output4"/>
+                                                    </div>
+                                                </div>
+
+
+                                                <br>
+
+                                            </div>
+                                            <hr class=" mt-3">
+                                            <div class="row justify-content-end">
+                                                <div class=" col-12 col-md-4 col-lg-3">
+                                                    <a class="next-btn d-flex justify-content-center my-4 w-100 py-3 align-items-center"
+                                                       href="#">
+
+                                                        <span class="me-3"> التالي</span>
+                                                        <svg fill="none" height="18" viewBox="0 0 18 18" width="18"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.28796 3.75L2.25016 9L7.28796 14.25" stroke="#3B8EE8"
+                                                                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line stroke="#3B8EE8" stroke-linecap="round" stroke-width="2"
+                                                                  transform="matrix(1 0 0 -1 2.45032 8.27393)"
+                                                                  x1="1" x2="12.2998"
+                                                                  y1="-1" y2="-1"/>
+                                                        </svg>
+
+
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                    <div aria-labelledby="profile-tab" class="tab-pane fade mt-4" id="profile" role="tabpanel">
+                                        <div class="row">
+                                            <div class="d-flex gray-inp align-items-center justify-content-start p-3 mb-4">
+                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M10 6.36364C7.99091 6.36364 6.36364 7.99091 6.36364 10C6.36364 12.0091 7.99091 13.6364 10 13.6364C12.0091 13.6364 13.6364 12.0091 13.6364 10C13.6364 7.99091 12.0091 6.36364 10 6.36364ZM18.1273 9.09091C17.9214 7.24738 17.0947 5.52867 15.783 4.21699C14.4713 2.90532 12.7526 2.07865 10.9091 1.87273V0H9.09091V1.87273C7.24738 2.07865 5.52867 2.90532 4.21699 4.21699C2.90532 5.52867 2.07865 7.24738 1.87273 9.09091H0V10.9091H1.87273C2.07865 12.7526 2.90532 14.4713 4.21699 15.783C5.52867 17.0947 7.24738 17.9214 9.09091 18.1273V20H10.9091V18.1273C12.7526 17.9214 14.4713 17.0947 15.783 15.783C17.0947 14.4713 17.9214 12.7526 18.1273 10.9091H20V9.09091H18.1273ZM10 16.3636C6.48182 16.3636 3.63636 13.5182 3.63636 10C3.63636 6.48182 6.48182 3.63636 10 3.63636C13.5182 3.63636 16.3636 6.48182 16.3636 10C16.3636 13.5182 13.5182 16.3636 10 16.3636Z" fill="#3B8EE8"/>
+                                                </svg>
+
+                                                <span class="gray_text ms-2"> 367 طريق العروبة، الورود، 12215 الرياض، السعودية</span>
+                                            </div>
+
+
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.5155046277123!2d46.66291207432619!3d24.70917645129639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f1d2e9df726b7%3A0xef6d0a486af2ddf3!2s367%20Al%20Urubah%20Rd%2C%20Al%20Olaya%2C%20Riyadh%2012333%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1689714989714!5m2!1sen!2s" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                            <label class="label-form mt-4">  اسم الفرع</label>
+                                            <input class="form-control mt-2 py-3 text-start gray_text  gray-inp mb-5" name="location-name"
+                                                   placeholder="ادخال اسم الفرع"
+                                                   required type="text">
+                                            <hr>
+                                            <div class="row justify-content-end">
+                                                <div class=" col-12 col-md-4 col-lg-3">
+                                                    <a class="btn_submit_1 d-flex justify-content-center my-4 w-100 py-3 align-items-center"
+                                                       href="#">
+
+                                                        <span class="me-3"> تأكييد الموقع</span>
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.28809 3.75L2.25028 9L7.28809 14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <line x1="1" y1="-1" x2="12.2998" y2="-1" transform="matrix(1 0 0 -1 2.4502 8.27393)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                        </svg>
+
+
+
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                <ul class="nav nav-tabs w-100 justify-content-around flex-nowrap " id="myTab2" role="tablist">
+                                    <li class="nav-item create-sec-tab" role="presentation">
+                                        <button aria-controls="home2" aria-selected="true" class="nav-link active tab-title"
+                                                data-bs-target="#home2" data-bs-toggle="tab" id="home-tab2" role="tab"
+                                                type="button">
+                                            <svg fill="none" height="24" viewBox="0 0 24 24" width="24"
+                                                 xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M20.9346 5.83087L15.3098 0.206016C15.1778 0.0741977 14.999 0.000105395 14.8125 0L4.96875 0C3.80564 0 2.85938 0.946266 2.85938 2.10938V21.8906C2.85938 23.0537 3.80564 24 4.96875 24H19.0312C20.1944 24 21.1406 23.0537 21.1406 21.8906V6.32812C21.1406 6.13641 21.0601 5.95636 20.9346 5.83087ZM15.5156 2.40061L18.74 5.625H16.2188C15.831 5.625 15.5156 5.30958 15.5156 4.92188V2.40061ZM19.0312 22.5938H4.96875C4.58105 22.5938 4.26562 22.2783 4.26562 21.8906V2.10938C4.26562 1.72167 4.58105 1.40625 4.96875 1.40625H14.1094V4.92188C14.1094 6.08498 15.0556 7.03125 16.2188 7.03125H19.7344V21.8906C19.7344 22.2783 19.419 22.5938 19.0312 22.5938Z"
+                                                      fill="#7797BB"/>
+                                                <path d="M16.2188 9.9375H7.78125C7.39294 9.9375 7.07812 10.2523 7.07812 10.6406C7.07812 11.0289 7.39294 11.3438 7.78125 11.3438H16.2188C16.6071 11.3438 16.9219 11.0289 16.9219 10.6406C16.9219 10.2523 16.6071 9.9375 16.2188 9.9375ZM16.2188 12.75H7.78125C7.39294 12.75 7.07812 13.0648 7.07812 13.4531C7.07812 13.8414 7.39294 14.1562 7.78125 14.1562H16.2188C16.6071 14.1562 16.9219 13.8414 16.9219 13.4531C16.9219 13.0648 16.6071 12.75 16.2188 12.75ZM16.2188 15.5625H7.78125C7.39294 15.5625 7.07812 15.8773 7.07812 16.2656C7.07812 16.6539 7.39294 16.9688 7.78125 16.9688H16.2188C16.6071 16.9688 16.9219 16.6539 16.9219 16.2656C16.9219 15.8773 16.6071 15.5625 16.2188 15.5625ZM13.4062 18.375H7.78125C7.39294 18.375 7.07812 18.6898 7.07812 19.0781C7.07812 19.4664 7.39294 19.7812 7.78125 19.7812H13.4062C13.7946 19.7812 14.1094 19.4664 14.1094 19.0781C14.1094 18.6898 13.7946 18.375 13.4062 18.375Z"
+                                                      fill="#7797BB"/>
+                                            </svg>
+                                            <span class="tab-title">بياناتي </span>
+                                        </button>
+                                    </li>
+                                    <li class="nav-item create-sec-tab" role="presentation">
+                                        <button aria-controls="profile2" aria-selected="false" class="nav-link tab-title"
+                                                data-bs-target="#profile2" data-bs-toggle="tab" id="profile-tab2" role="tab"
+                                                type="button">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10.0002 11.6665C10.2363 11.6665 10.4343 11.5865 10.5943 11.4265C10.7543 11.2665 10.8341 11.0687 10.8335 10.8332V9.1665H12.5002C12.7363 9.1665 12.9343 9.0865 13.0943 8.9265C13.2543 8.7665 13.3341 8.56873 13.3335 8.33317C13.3335 8.09706 13.2535 7.899 13.0935 7.739C12.9335 7.579 12.7357 7.49928 12.5002 7.49984H10.8335V5.83317C10.8335 5.59706 10.7535 5.399 10.5935 5.239C10.4335 5.079 10.2357 4.99928 10.0002 4.99984C9.76405 4.99984 9.566 5.07984 9.406 5.23984C9.246 5.39984 9.16627 5.59762 9.16683 5.83317V7.49984H7.50016C7.26405 7.49984 7.066 7.57984 6.906 7.73984C6.746 7.89984 6.66627 8.09761 6.66683 8.33317C6.66683 8.56928 6.74683 8.76734 6.90683 8.92734C7.06683 9.08734 7.26461 9.16706 7.50016 9.1665H9.16683V10.8332C9.16683 11.0693 9.24683 11.2673 9.40683 11.4273C9.56683 11.5873 9.76461 11.6671 10.0002 11.6665ZM10.0002 16.1248C11.6946 14.5693 12.9516 13.1559 13.771 11.8848C14.5904 10.6137 15.0002 9.48539 15.0002 8.49984C15.0002 6.98595 14.5174 5.7465 13.5518 4.7815C12.5863 3.8165 11.4024 3.33373 10.0002 3.33317C8.59738 3.33317 7.41322 3.81595 6.44766 4.7815C5.48211 5.74706 4.99961 6.9865 5.00016 8.49984C5.00016 9.48595 5.40988 10.6146 6.22933 11.8857C7.04877 13.1568 8.30572 14.5698 10.0002 16.1248ZM10.0002 18.0207C9.88905 18.0207 9.77794 17.9998 9.66683 17.9582C9.55572 17.9165 9.4585 17.8609 9.37516 17.7915C7.34738 15.9998 5.8335 14.3365 4.8335 12.8015C3.8335 11.2665 3.3335 9.83261 3.3335 8.49984C3.3335 6.4165 4.00377 4.75678 5.34433 3.52067C6.68489 2.28456 8.23683 1.6665 10.0002 1.6665C11.7641 1.6665 13.3163 2.28456 14.6568 3.52067C15.9974 4.75678 16.6674 6.4165 16.6668 8.49984C16.6668 9.83317 16.1668 11.2673 15.1668 12.8023C14.1668 14.3373 12.6529 16.0004 10.6252 17.7915C10.5418 17.8609 10.4446 17.9165 10.3335 17.9582C10.2224 17.9998 10.1113 18.0207 10.0002 18.0207Z" fill="#7797BB"/>
+                                            </svg>
+
+
+                                            <span class="tab-title">  عنواني </span>
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content w-100" id="myTabContent2">
+                                    <div aria-labelledby="home-tab2" class="tab-pane fade show active " id="home2" role="tabpanel">
+                                        <form action="" class="mt-4 row" method=" ">
+                                            <div class="col-12 col-lg-6 col-md-6 pe-3">
+                                                <label class=" label-form"> الاسم كامل <span class="gray_text">(مقدم الخدمة)</span></label>
+                                                <input class="form-control mt-2 py-3 text-start gray_text  gray-inp" name="name"
+                                                       placeholder="ادخال الاسم كامل"
+                                                       required type="text">
+                                                <br>
+                                                <label class=" label-form">  اسم مدير الشركة</label>
+                                                <input class="form-control mt-2 py-3 text-start gray_text  gray-inp" name="name"
+                                                       placeholder="ادخال اسم مدير الشركة"
+                                                       required type="text">
+                                                <br>
+                                                <label class="label-form">
+                                                    رقم السجل التجاري
+                                                </label>
+                                                <input class="form-control mt-2 py-3 text-start gray_text gray-inp " name="record-number"
+                                                       placeholder="ادخال رقم السجل التجاري"
+                                                       required type="text">
+                                                <br>
+                                                <label for="notes" class="label-form">
+                                                    وصف نشاط الشركة
+                                                </label>
+                                                <textarea name="textarea" rows="5" cols="40" id="notes" placeholder="يرجى اضافة وصف بسيط عن نشاط الشركة" class=" form-control mt-2 py-3 text-start  gray_text  gray-inp"></textarea>
+                                                <br>
+                                                <label for="notes2" class="label-form">
+                                                    معلومات اضافية عن الشركة
+                                                </label>
+                                                <textarea name="textarea" rows="5" cols="40" id="notes2" placeholder="يرجى اضافة معلومات اضافية عن الشركة" class=" form-control mt-2 py-3 text-start  gray_text  gray-inp"></textarea>
+                                                <div class="form-check mt-3 mb-4">
+                                                    <input class="form-check-input noti-svg" type="checkbox" value="" id="flexCheckChecked" checked="">
+                                                    <label class="form-check-label gray_text" for="flexCheckChecked">
+                                                        أوافق على سياسة الإستخدام
+                                                    </label>
+                                                </div>
+
+
+                                            </div>
+                                            <div class=" col-12 col-lg-6 col-md-6">
+
+                                                <label class="label-form">
+                                                    صورة الحساب
+                                                </label>
+                                                <br>
+                                                <div class="row">
+
+                                                    <div class="col-3">
+                                                        <input class="form-control  " id="file5" onchange="loadFile5(event)"
+                                                               type="file">
+                                                        <label class="noti-svg gray-inp justify-content-center d-flex align-items-center  mt-2 p-3"
+                                                               for="file5">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M18 9C17.7167 9 17.479 8.904 17.287 8.712C17.095 8.52 16.9993 8.28267 17 8V7H16C15.7167 7 15.479 6.904 15.287 6.712C15.095 6.52 14.9993 6.28267 15 6C15 5.71667 15.096 5.479 15.288 5.287C15.48 5.095 15.7173 4.99934 16 5H17V4C17 3.71667 17.096 3.479 17.288 3.287C17.48 3.095 17.7173 2.99934 18 3C18.2833 3 18.521 3.096 18.713 3.288C18.905 3.48 19.0007 3.71734 19 4V5H20C20.2833 5 20.521 5.096 20.713 5.288C20.905 5.48 21.0007 5.71734 21 6C21 6.28334 20.904 6.521 20.712 6.713C20.52 6.905 20.2827 7.00067 20 7H19V8C19 8.28334 18.904 8.521 18.712 8.713C18.52 8.905 18.2827 9.00067 18 9ZM7 17H17C17.2 17 17.35 16.9083 17.45 16.725C17.55 16.5417 17.5333 16.3667 17.4 16.2L14.65 12.525C14.55 12.3917 14.4167 12.325 14.25 12.325C14.0833 12.325 13.95 12.3917 13.85 12.525L11.25 16L9.4 13.525C9.3 13.3917 9.16667 13.325 9 13.325C8.83334 13.325 8.7 13.3917 8.6 13.525L6.6 16.2C6.46667 16.3667 6.45 16.5417 6.55 16.725C6.65 16.9083 6.8 17 7 17ZM5 21C4.45 21 3.979 20.804 3.587 20.412C3.195 20.02 2.99934 19.5493 3 19V5C3 4.45 3.196 3.979 3.588 3.587C3.98 3.195 4.45067 2.99934 5 3H13C13.2833 3 13.521 3.096 13.713 3.288C13.905 3.48 14.0007 3.71734 14 4V7C14 7.28334 14.096 7.521 14.288 7.713C14.48 7.905 14.7173 8.00067 15 8H16V9C16 9.28334 16.096 9.521 16.288 9.713C16.48 9.905 16.7173 10.0007 17 10H20C20.2833 10 20.521 10.096 20.713 10.288C20.905 10.48 21.0007 10.7173 21 11V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H5Z" fill="black"/>
+                                                            </svg>
+
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-6 ">
+
+                                                        <img class="w-100 " id="output5"/>
+
+
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <label class="label-form">
+                                                    صور وصف النشاط التجاري
+                                                </label>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <input class="form-control " id="file6" onchange="loadFile6(event)"
+                                                               type="file">
+                                                        <label class=" d-flex align-items-center justify-content-center gray-inp mt-2 p-3 noti-svg "
+                                                               for="file6">
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M18 9C17.7167 9 17.479 8.904 17.287 8.712C17.095 8.52 16.9993 8.28267 17 8V7H16C15.7167 7 15.479 6.904 15.287 6.712C15.095 6.52 14.9993 6.28267 15 6C15 5.71667 15.096 5.479 15.288 5.287C15.48 5.095 15.7173 4.99934 16 5H17V4C17 3.71667 17.096 3.479 17.288 3.287C17.48 3.095 17.7173 2.99934 18 3C18.2833 3 18.521 3.096 18.713 3.288C18.905 3.48 19.0007 3.71734 19 4V5H20C20.2833 5 20.521 5.096 20.713 5.288C20.905 5.48 21.0007 5.71734 21 6C21 6.28334 20.904 6.521 20.712 6.713C20.52 6.905 20.2827 7.00067 20 7H19V8C19 8.28334 18.904 8.521 18.712 8.713C18.52 8.905 18.2827 9.00067 18 9ZM7 17H17C17.2 17 17.35 16.9083 17.45 16.725C17.55 16.5417 17.5333 16.3667 17.4 16.2L14.65 12.525C14.55 12.3917 14.4167 12.325 14.25 12.325C14.0833 12.325 13.95 12.3917 13.85 12.525L11.25 16L9.4 13.525C9.3 13.3917 9.16667 13.325 9 13.325C8.83334 13.325 8.7 13.3917 8.6 13.525L6.6 16.2C6.46667 16.3667 6.45 16.5417 6.55 16.725C6.65 16.9083 6.8 17 7 17ZM5 21C4.45 21 3.979 20.804 3.587 20.412C3.195 20.02 2.99934 19.5493 3 19V5C3 4.45 3.196 3.979 3.588 3.587C3.98 3.195 4.45067 2.99934 5 3H13C13.2833 3 13.521 3.096 13.713 3.288C13.905 3.48 14.0007 3.71734 14 4V7C14 7.28334 14.096 7.521 14.288 7.713C14.48 7.905 14.7173 8.00067 15 8H16V9C16 9.28334 16.096 9.521 16.288 9.713C16.48 9.905 16.7173 10.0007 17 10H20C20.2833 10 20.521 10.096 20.713 10.288C20.905 10.48 21.0007 10.7173 21 11V19C21 19.55 20.804 20.021 20.412 20.413C20.02 20.805 19.5493 21.0007 19 21H5Z" fill="black"/>
+                                                            </svg>
+
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="w-100 " id="output6"/>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <label class="label-form">هوية مدير الشركة </label>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <input class="form-control " id="file7" onchange="loadFile7(event)"
+                                                               type="file">
+                                                        <label class="  d-flex align-items-center uploadlabel mt-2 p-2"
+                                                               for="file7">
+                                                            <svg class="me-1" fill="none" height="20" viewBox="0 0 16 20" width="16"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path clip-rule="evenodd"
+                                                                      d="M10.6911 0.110583C10.2284 -0.000499591 9.74865 -0.000271186 9.11366 3.08906e-05L5.7587 6.26003e-05C4.95373 4.98449e-05 4.28937 3.9354e-05 3.74818 0.0442567C3.18608 0.0901819 2.66937 0.188746 2.18404 0.436037C1.43139 0.819531 0.819469 1.43145 0.435975 2.1841C0.188684 2.66944 0.0901201 3.18614 0.0441949 3.74824C-2.21543e-05 4.28943 -1.19522e-05 4.95378 4.11647e-07 5.75875V14.2414C-1.19522e-05 15.0463 -2.2158e-05 15.7107 0.0441949 16.2519C0.0901201 16.814 0.188684 17.3307 0.435975 17.816C0.819469 18.5687 1.43139 19.1806 2.18404 19.5641C2.66937 19.8114 3.18608 19.9099 3.74818 19.9559C4.28937 20.0001 4.95372 20.0001 5.75868 20.0001H10.2413C11.0463 20.0001 11.7106 20.0001 12.2518 19.9559C12.8139 19.9099 13.3306 19.8114 13.816 19.5641C14.5686 19.1806 15.1805 18.5687 15.564 17.816C15.8113 17.3307 15.9099 16.814 15.9558 16.2519C16 15.7107 16 15.0463 16 14.2414L16 6.8864C16.0003 6.25142 16.0006 5.77161 15.8895 5.30892C15.7915 4.90078 15.6299 4.5106 15.4106 4.15271C15.1619 3.74699 14.8225 3.40789 14.3733 2.95909L13.041 1.62678C12.5922 1.17756 12.2531 0.838129 11.8474 0.589502C11.4895 0.370188 11.0993 0.20857 10.6911 0.110583ZM9 2.00006H5.8C4.94342 2.00006 4.36113 2.00084 3.91104 2.03761C3.47262 2.07343 3.24842 2.13836 3.09202 2.21805C2.7157 2.4098 2.40973 2.71576 2.21799 3.09208C2.1383 3.24848 2.07337 3.47269 2.03755 3.9111C2.00078 4.36119 2 4.94348 2 5.80006V14.2001C2 15.0566 2.00078 15.6389 2.03755 16.089C2.07337 16.5274 2.1383 16.7516 2.21799 16.908C2.40973 17.2844 2.7157 17.5903 3.09202 17.7821C3.24842 17.8618 3.47262 17.9267 3.91104 17.9625C4.36113 17.9993 4.94342 18.0001 5.8 18.0001H10.2C11.0566 18.0001 11.6389 17.9993 12.089 17.9625C12.5274 17.9267 12.7516 17.8618 12.908 17.7821C13.2843 17.5903 13.5903 17.2844 13.782 16.908C13.8617 16.7516 13.9266 16.5274 13.9624 16.089C13.9992 15.6389 14 15.0566 14 14.2001V7.00006H12C10.3431 7.00006 9 5.65692 9 4.00006V2.00006ZM13.56 5.00006C13.4398 4.85796 13.2479 4.66216 12.887 4.30128L11.6988 3.11306C11.3379 2.75218 11.1421 2.56026 11 2.44009V4.00006C11 4.55235 11.4477 5.00006 12 5.00006H13.56Z"
+                                                                      fill="#B5BEC8"
+                                                                      fill-rule="evenodd"></path>
+                                                            </svg>
+                                                            اضافة ملف
+                                                        </label>
+                                                    </div>
+
+                                                    <div class="col-6 ">
+
+                                                        <img class="w-100 " id="output7"/>
+
+
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <label class="label-form"> صورة السجل التجاري</label>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <input class="form-control " id="file8" onchange="loadFile8(event)"
+                                                               type="file">
+                                                        <label class=" d-flex align-items-center uploadlabel mt-2 p-2 "
+                                                               for="file8">
+                                                            <svg class="me-1" fill="none" height="20" viewBox="0 0 16 20" width="16"
+                                                                 xmlns="http://www.w3.org/2000/svg">
+                                                                <path clip-rule="evenodd"
+                                                                      d="M10.6911 0.110583C10.2284 -0.000499591 9.74865 -0.000271186 9.11366 3.08906e-05L5.7587 6.26003e-05C4.95373 4.98449e-05 4.28937 3.9354e-05 3.74818 0.0442567C3.18608 0.0901819 2.66937 0.188746 2.18404 0.436037C1.43139 0.819531 0.819469 1.43145 0.435975 2.1841C0.188684 2.66944 0.0901201 3.18614 0.0441949 3.74824C-2.21543e-05 4.28943 -1.19522e-05 4.95378 4.11647e-07 5.75875V14.2414C-1.19522e-05 15.0463 -2.2158e-05 15.7107 0.0441949 16.2519C0.0901201 16.814 0.188684 17.3307 0.435975 17.816C0.819469 18.5687 1.43139 19.1806 2.18404 19.5641C2.66937 19.8114 3.18608 19.9099 3.74818 19.9559C4.28937 20.0001 4.95372 20.0001 5.75868 20.0001H10.2413C11.0463 20.0001 11.7106 20.0001 12.2518 19.9559C12.8139 19.9099 13.3306 19.8114 13.816 19.5641C14.5686 19.1806 15.1805 18.5687 15.564 17.816C15.8113 17.3307 15.9099 16.814 15.9558 16.2519C16 15.7107 16 15.0463 16 14.2414L16 6.8864C16.0003 6.25142 16.0006 5.77161 15.8895 5.30892C15.7915 4.90078 15.6299 4.5106 15.4106 4.15271C15.1619 3.74699 14.8225 3.40789 14.3733 2.95909L13.041 1.62678C12.5922 1.17756 12.2531 0.838129 11.8474 0.589502C11.4895 0.370188 11.0993 0.20857 10.6911 0.110583ZM9 2.00006H5.8C4.94342 2.00006 4.36113 2.00084 3.91104 2.03761C3.47262 2.07343 3.24842 2.13836 3.09202 2.21805C2.7157 2.4098 2.40973 2.71576 2.21799 3.09208C2.1383 3.24848 2.07337 3.47269 2.03755 3.9111C2.00078 4.36119 2 4.94348 2 5.80006V14.2001C2 15.0566 2.00078 15.6389 2.03755 16.089C2.07337 16.5274 2.1383 16.7516 2.21799 16.908C2.40973 17.2844 2.7157 17.5903 3.09202 17.7821C3.24842 17.8618 3.47262 17.9267 3.91104 17.9625C4.36113 17.9993 4.94342 18.0001 5.8 18.0001H10.2C11.0566 18.0001 11.6389 17.9993 12.089 17.9625C12.5274 17.9267 12.7516 17.8618 12.908 17.7821C13.2843 17.5903 13.5903 17.2844 13.782 16.908C13.8617 16.7516 13.9266 16.5274 13.9624 16.089C13.9992 15.6389 14 15.0566 14 14.2001V7.00006H12C10.3431 7.00006 9 5.65692 9 4.00006V2.00006ZM13.56 5.00006C13.4398 4.85796 13.2479 4.66216 12.887 4.30128L11.6988 3.11306C11.3379 2.75218 11.1421 2.56026 11 2.44009V4.00006C11 4.55235 11.4477 5.00006 12 5.00006H13.56Z"
+                                                                      fill="#B5BEC8"
+                                                                      fill-rule="evenodd"></path>
+                                                            </svg>
+
+                                                            اضافة ملف
+                                                        </label>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <img class="w-100 " id="output8"/>
+                                                    </div>
+                                                </div>
+                                                <br>
+
+                                            </div>
+                                            <hr class=" mt-3">
+                                            <div class="row justify-content-end">
+                                                <div class=" col-12 col-md-4 col-lg-3">
+                                                    <a class="next-btn d-flex justify-content-center my-4 w-100 py-3 align-items-center"
+                                                       href="#">
+
+                                                        <span class="me-3"> التالي</span>
+                                                        <svg fill="none" height="18" viewBox="0 0 18 18" width="18"
+                                                             xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.28796 3.75L2.25016 9L7.28796 14.25" stroke="#3B8EE8"
+                                                                  stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+                                                            <line stroke="#3B8EE8" stroke-linecap="round" stroke-width="2"
+                                                                  transform="matrix(1 0 0 -1 2.45032 8.27393)"
+                                                                  x1="1" x2="12.2998"
+                                                                  y1="-1" y2="-1"/>
+                                                        </svg>
+
+
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </form>
+                                    </div>
+
+                                    <div aria-labelledby="profile-tab2" class="tab-pane fade mt-4" id="profile2" role="tabpanel">
+
+                                        <div class="row">
+                                           <div class="d-flex gray-inp align-items-center justify-content-start p-3 mb-4">
+                                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M10 6.36364C7.99091 6.36364 6.36364 7.99091 6.36364 10C6.36364 12.0091 7.99091 13.6364 10 13.6364C12.0091 13.6364 13.6364 12.0091 13.6364 10C13.6364 7.99091 12.0091 6.36364 10 6.36364ZM18.1273 9.09091C17.9214 7.24738 17.0947 5.52867 15.783 4.21699C14.4713 2.90532 12.7526 2.07865 10.9091 1.87273V0H9.09091V1.87273C7.24738 2.07865 5.52867 2.90532 4.21699 4.21699C2.90532 5.52867 2.07865 7.24738 1.87273 9.09091H0V10.9091H1.87273C2.07865 12.7526 2.90532 14.4713 4.21699 15.783C5.52867 17.0947 7.24738 17.9214 9.09091 18.1273V20H10.9091V18.1273C12.7526 17.9214 14.4713 17.0947 15.783 15.783C17.0947 14.4713 17.9214 12.7526 18.1273 10.9091H20V9.09091H18.1273ZM10 16.3636C6.48182 16.3636 3.63636 13.5182 3.63636 10C3.63636 6.48182 6.48182 3.63636 10 3.63636C13.5182 3.63636 16.3636 6.48182 16.3636 10C16.3636 13.5182 13.5182 16.3636 10 16.3636Z" fill="#3B8EE8"/>
+                                            </svg>
+
+                                            <span class="gray_text ms-2"> 367 طريق العروبة، الورود، 12215 الرياض، السعودية</span>
+                                            </div>
+
+
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.5155046277123!2d46.66291207432619!3d24.70917645129639!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f1d2e9df726b7%3A0xef6d0a486af2ddf3!2s367%20Al%20Urubah%20Rd%2C%20Al%20Olaya%2C%20Riyadh%2012333%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1689714989714!5m2!1sen!2s" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                                            <label class="label-form mt-4">  اسم الفرع</label>
+                                            <input class="form-control mt-2 py-3 text-start gray_text  gray-inp mb-5" name="location-name"
+                                                   placeholder="ادخال اسم الفرع"
+                                                   required type="text">
+                                            <hr>
+                                            <div class="row justify-content-end">
+                                                <div class=" col-12 col-md-4 col-lg-3">
+                                                    <a class="btn_submit_1 d-flex justify-content-center my-4 w-100 py-3 align-items-center"
+                                                       href="#">
+
+                                                        <span class="me-3"> تأكييد الموقع</span>
+                                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M7.28809 3.75L2.25028 9L7.28809 14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <line x1="1" y1="-1" x2="12.2998" y2="-1" transform="matrix(1 0 0 -1 2.4502 8.27393)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                                        </svg>
+
+
+
+                                                    </a>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+
+<!--start footer section -->
+<footer class="mt-5">
+    <div class="container py-5">
+        <div class="row align-items-center text-center text-lg-start justify-content-md-center">
+            <div class="col-lg-3 col-md-12">
+                <div class="d-flex flex-column flex-lg-column ">
+                    <div class="  d-flex justify-content-center justify-content-lg-start  my-3">
+                        <img alt="" class="img-fluid" src="../assets/img/icons/footerLogo.svg">
+                    </div>
+                    <p class="text_footer_hero">موقع حجوزاتي ، لتسهيل طلب خدماتك باسرع وقت ممكن مع اقوى التقنيين بشكل
+                        آمن
+                        ومنظم.</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 ps-lg-5 mt-lg-4 mt-md-4">
+                <div class="d-flex flex-column flex-lg-column justify-content-center">
+                    <a href="#">
+                        <svg fill="none" height="9" viewBox="0 0 7 9" width="7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_89_6608" x1="0" x2="9"
+                                                y1="9"
+                                                y2="-3.93402e-07">
+                                    <stop stop-color="#3C8CE7"/>
+                                    <stop offset="1" stop-color="#00D6E9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="text_footer">الخدمات </span>
+
+                    </a>
+
+                    <a href="../about-us.html">
+                        <svg fill="none" height="9" viewBox="0 0 7 9" width="7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_89_6608" x1="0" x2="9"
+                                                y1="9"
+                                                y2="-3.93402e-07">
+                                    <stop stop-color="#3C8CE7"/>
+                                    <stop offset="1" stop-color="#00D6E9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="text_footer">من نحن</span>
+
+                    </a>
+
+                    <a href="../common.html">
+                        <svg fill="none" height="9" viewBox="0 0 7 9" width="7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_89_6608" x1="0" x2="9"
+                                                y1="9"
+                                                y2="-3.93402e-07">
+                                    <stop stop-color="#3C8CE7"/>
+                                    <stop offset="1" stop-color="#00D6E9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="text_footer">الأسئلة الشائعة</span>
+
+                    </a>
+
+
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 mb-lg-3">
+                <div class="d-flex flex-column flex-lg-column justify-content-between">
+                    <a href="#">
+                        <svg fill="none" height="9" viewBox="0 0 7 9" width="7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_89_6608" x1="0" x2="9"
+                                                y1="9"
+                                                y2="-3.93402e-07">
+                                    <stop stop-color="#3C8CE7"/>
+                                    <stop offset="1" stop-color="#00D6E9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="text_footer">سياسة الخصوصية </span>
+
+                    </a>
+                    <a href="#">
+                        <svg fill="none" height="9" viewBox="0 0 7 9" width="7" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.25 7.53109L1 4.5L6.25 1.46891L6.25 7.53109Z"
+                                  stroke="url(#paint0_linear_89_6608)"/>
+                            <defs>
+                                <linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_89_6608" x1="0" x2="9"
+                                                y1="9"
+                                                y2="-3.93402e-07">
+                                    <stop stop-color="#3C8CE7"/>
+                                    <stop offset="1" stop-color="#00D6E9"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+
+                        <span class="text_footer">سياسة الترجيع </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-3 mb-lg-4">
+                <h3 class="text_footer">تابعونا على : </h3>
+                <div class="d-flex justify-content-center justify-content-lg-start">
+                    <a href="#">
+                        <img alt="Facebook" class="img-fluid mx-1" src="../assets/img/icons/Facebook.svg">
+                    </a>
+
+                    <a href="#">
+                        <img alt="Youtube" class="img-fluid mx-1" src="../assets/img/icons/Instagram.svg">
+                    </a>
+
+                    <a href="#">
+                        <img alt="Twitter" class="img-fluid mx-1" src="../assets/img/Twitter.svg">
+                    </a>
+
+                    <a href="#">
+                        <img alt="Pintrst" class="img-fluid mx-1" src="../assets/img/icons/TikTok.svg">
+                    </a>
+
+                    <a href="#">
+                        <img alt="Instagram" class="img-fluid mx-1" src="../assets/img/icons/YouTube.svg">
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="row text-center mt-4 mx-0 copy-write">
+        <h3 class="text_footer py-2 mb-0">
+            @ 2023 جميع الحقوق محفوظة - موقع حجوزاتي للخدمات
+        </h3>
+
+
+    </div>
+
+</footer>
+<!--end footer section-->
+<script src="../assets/js/bootstrap.min.js"></script>
+<script src="../assets/js/min.js"></script>
+<script>
+    var loadFile = function (event) {
+        var image = document.getElementById('output');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+    var loadFile2 = function (event) {
+        var image2 = document.getElementById('output2');
+        image2.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+    var loadFile3 = function (event) {
+        var image3 = document.getElementById('output3');
+        image3.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+    var loadFile4 = function (event) {
+        var image4 = document.getElementById('output4');
+        image4.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile5 = function (event) {
+        var image5 = document.getElementById('output5');
+        image5.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile6 = function (event) {
+        var image6 = document.getElementById('output6');
+        image6.src = URL.createObjectURL(event.target.files[0]);
+    };
+
+    var loadFile7 = function (event) {
+        var image7 = document.getElementById('output7');
+        image7.src = URL.createObjectURL(event.target.files[0]);
+    };
+    var loadFile8 = function (event) {
+        var image8= document.getElementById('output8');
+        image8.src = URL.createObjectURL(event.target.files[0]);
+    };
+</script>
+</body>
+</html>

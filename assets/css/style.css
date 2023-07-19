@@ -588,7 +588,10 @@ position: relative;
     transition: all 0.4s ease-in-out;
 }
 
-
+.btn_submit_1:hover line, .btn_submit_1:hover path{
+    stroke:var(--main-color);;
+    transition: all .4s ease-in-out;
+}
 /************************ start style password page 1*************************************/
 .card-container{
     border:1px solid #7797BB;
@@ -1319,14 +1322,87 @@ footer > .copy-write{
 
 
 
+/*******************************start style provider */
+.provider-title{
+    color: var(--second-color);
+    font-size: 18px;
+    font-weight: 700;
 
+}
+.nav-pills .person-li .active , .nav-pills .company-li .active{
+    border-radius: 8px;
+    background: var(--main-color);
+    border: none;
+}
 
+.person-li .nav-link , .company-li .nav-link{
+    color: #7797BB;
+}
 
+/*profile provider */
+.text-provider{
+    color: var(--second-color);
+    font-size: 12px;
+    font-weight: 500;
+}
+.radio-peron , .radio-company{
+    display: none;
+}
 
+.person-label{
+    background-color: red;
+}
+.circle-provider-order{
+    width: 3rem;
+    height:3rem;
+    border-radius: 50%;
 
+}
 
+/*************** wateing order details provider *************************/
+.reject-btn{
+    background-color:#F3F8FE ;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: var(--main-color);
+    border-radius: 8px;
+    border:none;
+}
+.reject-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: all .4s ease-in-out;
+}
+.reject-btn:hover path{
+    stroke:white;
+}
 
+/***************  on-progress provider ****************************/
+.gray-btn{
+    background-color: #F8F8F8;
+    border-radius: 8px;
+}
+.gray-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: all .4s ease-in-out;
+}
 
+.gray-hero-btn{
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 8px;
+}
+.gray-hero-btn:hover{
+    background-color: #F8F8F8;
+   color: var(--second-color);
+    transition: all .4s ease-in-out;
+}
+.gray-hero-btn:hover path{
+    fill:var(--second-color);
+    transition: all .4s ease-in-out;
+}
 /******** about us images  ***********/
 @media (max-width: 834px) {
     .left-side-images {
@@ -1370,5 +1446,33 @@ footer > .copy-write{
         border-radius: 0 0 16px 16px
     }
 
+}
+@media (max-width: 992px){
+    .upload_profile_div{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: var(--backGround-color);
+        border: 2px solid white;
+        position: absolute;
+        top:72%;
+        right: 45%;
+        cursor: pointer;
+        z-index: 2;
+    }
+}
+@media (max-width: 450px){
+    .upload_profile_div{
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        background-color: var(--backGround-color);
+        border: 2px solid white;
+        position: absolute;
+        top:72%;
+        right: 40%;
+        cursor: pointer;
+        z-index: 2;
+    }
 }
 
