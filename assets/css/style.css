@@ -608,10 +608,12 @@ position: relative;
     background: white;
     color: var(--main-color);
     border: 1px solid var(--main-color);
+    transition: all .4s ease-in-out;
 
 }
 .rounded-inp:hover path{
     fill: var(--main-color);
+    transition: all .4s ease-in-out;
 
 }
 .gray-inp{
@@ -1402,6 +1404,89 @@ footer > .copy-write{
 .gray-hero-btn:hover path{
     fill:var(--second-color);
     transition: all .4s ease-in-out;
+}
+/************  my service provider ************************/
+.provider-hero{
+    font-size: 16px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.sub-provider-text{
+    font-weight: 300;
+    font-size: 12px;
+    color: var(--second-color);
+}
+.cold-blue-container{
+    background-color: #F3F8FE;
+    border-radius: 8px;
+}
+.provider-tab{
+    font-size: 10px;
+    color: black;
+    white-space: nowrap;
+}
+.category-provider > .active{
+    background-color: var(--main-color) !important;
+    border-radius: 27px;
+    border: 1px solid white;
+
+}
+
+.category-provider > .active > .provider-tab{
+    color: white;
+}
+.category-provider:nth-child(1) > .active path, .category-provider:nth-child(2) > .active path , .category-provider:nth-child(3) > .active path{
+    fill:white;
+}
+.category-provider:nth-child(4) > .active path , .category-provider:nth-child(5) > .active path ,.category-provider:nth-child(6) > .active path{
+    stroke: none;
+    fill:white;
+}
+.building-link:hover .gray-inp{
+    border: 1.5px solid var(--main-color);
+
+}
+.white-small-square{
+    background-color: white;
+    border-radius: 4px;
+
+
+}
+.hotel-provider-img{
+    width: 98px;
+    height: 98px;
+    border-radius: 50%;
+}
+/****************  add new service   **************************************/
+.provider-model-title{
+    color: var(--main-color);
+    font-weight:400 ;
+    font-size: 14px;
+}
+.provider-sub-model{
+    color: var(--second-color);
+    font-size: 14px;
+    font-weight: 700;
+}
+.gray-round-inp{
+    background-color: var(--backGround-color);
+    border-radius: 100px;
+    border: none;
+}
+/******** add new property **********************/
+.path-page{
+    font-size: 12px;
+    color: black;
+
+}
+.place-holder{
+    font-size: 12px;
+    font-weight: 300;
+
+}
+.place-holder::placeholder{
+    color: #B5BEC8;
 }
 /******** about us images  ***********/
 @media (max-width: 834px) {
