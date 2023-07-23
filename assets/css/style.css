@@ -1474,6 +1474,125 @@ footer > .copy-write{
     border-radius: 100px;
     border: none;
 }
+.white-round-btn{
+    background-color: white;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+    font-size: 16px;
+    border-radius: 22px;
+}
+.white-round-btn:hover{
+    background-color: var(--main-color);
+    color: white;
+    transition: all .4s ease-in-out;
+}
+.rounded-inp-prov{
+    border-radius: 22px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    font-size: 12px;
+    color: white;
+}
+.rounded-inp-prov:hover{
+    border-radius: 22px;
+    border: 1px solid #7797BB;
+    background-color: white;
+    font-size: 12px;
+    color: #7797BB;
+    transition: all .4s ease-in-out;
+}
+.rounded-inp-white-prov{
+    border-radius: 22px;
+    border: 1px solid #7797BB;
+    background-color: white;
+    font-size: 12px;
+    color: #7797BB;
+}
+.rounded-inp-white-prov:hover{
+    border-radius: 22px;
+    border: 1px solid var(--main-color);
+    background-color: var(--main-color);
+    font-size: 12px;
+    color: white;
+    transition: all .4s ease-in-out;
+}
+.prov-acco{
+    overflow-x: hidden;
+overflow-y: scroll;
+height: 220px}
+.radio-provider-inp:checked +.radio-provider-label{
+    color: var(--main-color);
+}
+/*test */
+.counter-container{
+    width: 31px;
+    height: 31px;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.counter-gray{
+    background-color: var(--backGround-color);
+    border-radius: 8px;
+
+}
+#total-count{
+    font-weight: 500;
+    font-size: 14px;
+}
+#total-count2{
+    font-weight: 500;
+    font-size: 14px;
+}
+#total-count3{
+    font-weight: 500;
+    font-size: 14px;
+}
+
+[dir=rtl] .iti--allow-dropdown .iti__flag-container{
+    right: auto;
+
+    left: 0;}
+
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: inherit;
+}
+.iti__selected-flag {
+    direction: ltr;}
+.iti--separate-dial-code .iti__selected-dial-code {
+    margin-left: 0;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font-size: 12px;}
+/* Add some basic styling for the selectable divs */
+.selectableDiv {
+
+    cursor: pointer;
+}
+
+/* Add a CSS class to indicate the selected divs */
+.selected.prov-g_circle{
+       background-color: var(--main-color);
+   }
+
+/*.selected.prov-g_circle:nth-child(1) path , .selected.prov-g_circle:nth-child(2) path{*/
+/*stroke: white;*/
+/*    fill: none;*/
+/*}*/
+.selected path{
+    fill: white;
+
+}
+.selected.under_text{
+    color: var(--main-color);
+}
+.prov-g_circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F7F7F7;
+
+}
 /******** add new property **********************/
 .path-page{
     font-size: 12px;
@@ -1488,6 +1607,15 @@ footer > .copy-write{
 .place-holder::placeholder{
     color: #B5BEC8;
 }
+
+
+
+
+/********** wallet provider  ************************/
+.wallet-all-provider {
+    overflow-y: scroll;
+    overflow-x: hidden;
+height: 184px}
 /******** about us images  ***********/
 @media (max-width: 834px) {
     .left-side-images {
