@@ -640,10 +640,11 @@ position: relative;
     border-radius: 50%;
 }
 
-.Before_After_div{
+
+.Before_After_div {
     position: relative;
     z-index: 0;
-
+    display: block;
 }
 .Before_After_div::before{
     content: "";
@@ -1706,3 +1707,48 @@ height: 184px}
     }
 }
 
+/*test */
+.star-prov{
+    font-size: 9px;
+}
+.square-rating{
+    background-color: var(--main-color);
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+}
+.content-rate{
+    color: white;
+    font-size: 10px;
+}
+.rate-good{
+    font-size: 12px;
+    font-weight: 400;
+}
+.modal-checkbox{
+    display: none;
+}
+.modal-checkbox:checked +label .prov-g_circle{
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+.modal-checkbox:checked +label .under_text{
+    color: var(--main-color);
+
+}
+.father:nth-child(2) > .modal-checkbox:checked +label  path{
+    fill:red;
+}
+.heart_svg.filled path {
+
+    fill: #F33737;
+    /* Change the color to your desired filled color */
+}
+#heart {
+    color: grey;
+    font-size: 50px;
+}
+
+#heart.red {
+    color: red;
+}
