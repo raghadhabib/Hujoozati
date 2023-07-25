@@ -11,12 +11,6 @@ body{
     --gray:#B5BEC8;
 
 }
-/*.navbar-toggler {*/
-/*    */
-/*    border: none;*/
-
-/*}*/
-
 
 .profile-rightSide-list{
     border-radius: 50%;
@@ -286,9 +280,7 @@ input::-webkit-inner-spin-button {
     border: none;
     box-shadow: none;
 }
-.sel > option{
-    /*background-color: red;*/
-}
+
 .next-arrow i {
     color: black;
     font-size: 16px;
@@ -465,7 +457,6 @@ position: relative;
     box-shadow: none;
 }
 .accordion-button:not(.collapsed){
-    /*border: 1px solid var(--second-color);*/
     box-shadow: none !important;
 
 }
@@ -628,6 +619,10 @@ position: relative;
     height:55px;
 }
 /************************** start style service details ******************************/
+.heart_svg.filled path {
+    fill: #F33737;
+
+}
 .gray_page{
     color: #B5BEC8;
     font-size: 14px;
@@ -805,6 +800,29 @@ position: relative;
     color: black;
 
 }
+.tab-title-form{
+    font-size: 14px;
+    color: #7797BB;
+}
+.active > .tab-title-form{
+    color: var(--main-color);
+    position: relative;
+    border-bottom: 2px solid var(--main-color);
+  
+
+
+}
+/*.active > .tab-title-form::before{*/
+/*    content: " ";*/
+/*    width: 100%;*/
+/*    height: 3px;*/
+/*    background-color: var(--main-color);*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    z-index: 100;*/
+/*    right: 16px;*/
+/*    bottom: -81%;*/
+/*}*/
 
 /* The switch - the box around the slider */
 .switch {
@@ -1006,7 +1024,8 @@ input[type="file"]{
     font-weight: 700
 }
 .price-text{
-    font-size: 14px; color: var(--main-color);}
+    font-size: 14px; color: var(--main-color);
+}
 .btn-order{
     font-weight: 400;
     font-size: 13px;
@@ -1024,12 +1043,13 @@ input[type="file"]{
 }
 
 .div-img-profile{
-position: relative;
+
+    position: relative;
 }
 .card_waiting_img{
     border-radius: 11px;
 }
-/*waiting order details */
+/***************************8waiting order details *******************/
 .form-check-input:checked {
     background-color: var(--main-color);
     border-color: var(--main-color);
@@ -1084,7 +1104,7 @@ position: relative;
     stroke:  #FAEBEC;
     transition: all 0.4s ease-in-out;
 }
-/*style model rating service */
+/******************style model rating service ********************88/
 .model_img{
     border-radius: 100%;
     width: 93px;
@@ -1325,7 +1345,7 @@ footer > .copy-write{
 
 
 
-/*******************************start style provider */
+/*******************************start style provider ********************/
 .provider-title{
     color: var(--second-color);
     font-size: 18px;
@@ -1342,7 +1362,7 @@ footer > .copy-write{
     color: #7797BB;
 }
 
-/*profile provider */
+/******************************profile provider ******************/
 .text-provider{
     color: var(--second-color);
     font-size: 12px;
@@ -1460,6 +1480,42 @@ footer > .copy-write{
     border-radius: 50%;
 }
 /****************  add new service   **************************************/
+
+/* Checked style for the first checkbox */
+#flexCheckChecked:checked + .form-check-label .prov-g_circle path {
+    stroke: white;
+}
+
+/* Checked style for the second checkbox */
+#flexCheckChecked2:checked + .form-check-label .prov-g_circle path {
+    stroke: white;
+}
+
+/* Checked style for the third checkbox */
+#flexCheckChecked3:checked + .form-check-label .prov-g_circle path {
+    fill: white;
+    stroke: none;
+}
+#flexCheckChecked4:checked + .form-check-label .prov-g_circle path {
+    fill: white;
+    stroke: none;
+}
+#flexCheckChecked5:checked + .form-check-label .prov-g_circle path {
+    fill: white;
+    stroke: none;
+}
+.ul-index-btns-prov{
+    overflow: auto;
+    max-width: 100%;
+
+}
+.prov-g_circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #F7F7F7;
+
+}
 .provider-model-title{
     color: var(--main-color);
     font-weight:400 ;
@@ -1520,7 +1576,8 @@ footer > .copy-write{
 .prov-acco{
     overflow-x: hidden;
 overflow-y: scroll;
-height: 220px}
+height: 220px;
+}
 .radio-provider-inp:checked +.radio-provider-label{
     color: var(--main-color);
 }
@@ -1541,7 +1598,7 @@ height: 220px}
     background-color: var(--backGround-color);
     cursor: pointer;
 }
-/*test */
+
 .counter-container{
     width: 31px;
     height: 31px;
@@ -1566,51 +1623,36 @@ height: 220px}
     font-weight: 500;
     font-size: 14px;
 }
-
-[dir=rtl] .iti--allow-dropdown .iti__flag-container{
-    right: auto;
-
-    left: 0;}
-
-.iti--separate-dial-code .iti__selected-flag {
-    background-color: inherit;
+.star-prov{
+    font-size: 9px;
 }
-.iti__selected-flag {
-    direction: ltr;}
-.iti--separate-dial-code .iti__selected-dial-code {
-    margin-left: 0;
-    padding-inline-start: 10px;
-    padding-inline-end: 10px;
-    font-size: 12px;}
-/* Add some basic styling for the selectable divs */
-.selectableDiv {
-
+.square-rating{
+    background-color: var(--main-color);
+    width: 17px;
+    height: 17px;
+    border-radius: 2px;
+}
+.content-rate{
+    color: white;
+    font-size: 10px;
+}
+.rate-good{
+    font-size: 12px;
+    font-weight: 400;
+}
+.modal-checkbox{
+    display: none;
+}
+.modal-checkbox:checked +label .prov-g_circle{
+    background-color: var(--main-color);
     cursor: pointer;
 }
-
-/* Add a CSS class to indicate the selected divs */
-.selected.prov-g_circle{
-       background-color: var(--main-color);
-   }
-
-/*.selected.prov-g_circle:nth-child(1) path , .selected.prov-g_circle:nth-child(2) path{*/
-/*stroke: white;*/
-/*    fill: none;*/
-/*}*/
-.selected path{
-    fill: white;
-
-}
-.selected.under_text{
+.modal-checkbox:checked +label .under_text{
     color: var(--main-color);
-}
-.prov-g_circle{
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: #F7F7F7;
 
 }
+
+
 /******** add new property **********************/
 .path-page{
     font-size: 12px;
@@ -1634,6 +1676,9 @@ height: 220px}
     overflow-y: scroll;
     overflow-x: hidden;
 height: 184px}
+
+
+/*******************  media query   ***************************************/
 /******** about us images  ***********/
 @media (max-width: 834px) {
     .left-side-images {
@@ -1707,48 +1752,26 @@ height: 184px}
     }
 }
 
-/*test */
-.star-prov{
-    font-size: 9px;
-}
-.square-rating{
-    background-color: var(--main-color);
-    width: 17px;
-    height: 17px;
-    border-radius: 2px;
-}
-.content-rate{
-    color: white;
-    font-size: 10px;
-}
-.rate-good{
-    font-size: 12px;
-    font-weight: 400;
-}
-.modal-checkbox{
-    display: none;
-}
-.modal-checkbox:checked +label .prov-g_circle{
-    background-color: var(--main-color);
-    cursor: pointer;
-}
-.modal-checkbox:checked +label .under_text{
-    color: var(--main-color);
+/*****************************test ******************/
 
-}
-.father:nth-child(2) > .modal-checkbox:checked +label  path{
-    fill:red;
-}
-.heart_svg.filled path {
 
-    fill: #F33737;
-    /* Change the color to your desired filled color */
-}
-#heart {
-    color: grey;
-    font-size: 50px;
-}
+[dir=rtl] .iti--allow-dropdown .iti__flag-container{
+    right: auto;
 
-#heart.red {
-    color: red;
+    left: 0;}
+
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: inherit;
 }
+.iti__selected-flag {
+    direction: ltr;}
+.iti--separate-dial-code .iti__selected-dial-code {
+    margin-left: 0;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
+    font-size: 12px;}
+
+
+
+
+
