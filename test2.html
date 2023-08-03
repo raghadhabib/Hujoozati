@@ -20,7 +20,11 @@
 </head>
 <body>
 
+<div class="container">
+  <input type="file" id="fileInput" onchange="displayFileName()">
+  <p id="fileName"></p>
 
+</div>
 
 <!--start header section -->
 <div class="header-div">
@@ -377,7 +381,18 @@
 </div>
 
 <!-- end header -->
+<script>
+  function displayFileName() {
+    const fileInput = document.getElementById('fileInput');
+    const fileNameDisplay = document.getElementById('fileName');
 
+    if (fileInput.files.length > 0) {
+      fileNameDisplay.textContent = 'File name: ' + fileInput.files[0].name;
+    } else {
+      fileNameDisplay.textContent = '';
+    }
+  }
+</script>
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/slick.min.js"></script>

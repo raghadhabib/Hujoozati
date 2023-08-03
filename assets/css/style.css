@@ -12,6 +12,7 @@ body{
 
 }
 
+
 .profile-rightSide-list{
     border-radius: 50%;
     width: 50px;
@@ -89,12 +90,48 @@ body{
 .header-drop > option:hover{
     background-color: var(--second-color) ;
 }
+
+/* Zoom Out #1 */
+.index-img-card:hover {
+    -webkit-transform: scale(.9);
+        transform: scale(.9);
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s all ease-in-out;
+}
+.index-img-card{
+    height: 213px;
+    object-fit: cover;
+}
 .login-btn{
     border-radius: 22px;
     border: 1.5px solid var(--second-color);
     color: var(--second-color);
     font-size: 14px;
     font-weight: 300;
+}
+.login-btn-index{
+    border-radius: 22px;
+    border: 1.5px solid white;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+.login-btn-index:hover{
+    border-radius: 27px;
+    border: 1.5px solid white;
+    background-color: #2C79CD;
+    color: #FFFFFF ;
+    transition: all 0.4s ease-in-out;
+}
+.hotelName{
+    font-size: 10px;
+    color: #7C90A6;
+    font-weight: 300;
+
+}
+.hotelName:hover
+{
+    color:#7C90A6 ;
 }
 .user-ul li{
     font-size: 13px;
@@ -172,6 +209,9 @@ input::-webkit-inner-spin-button {
 .card h6{
     font-size: 14px;
 }
+.category{
+    margin-bottom: 14px;
+}
 .category > .active{
     border-radius: 27px;
     border: 1px solid white;
@@ -219,15 +259,13 @@ input::-webkit-inner-spin-button {
     width: 100%;
     height: 100%;
 }
-.right-slider-div::after{
-    content: " غرفة مجوز مطلة على البحر";
+.overText{
     position: absolute;
     z-index: 10000;
     top:87%;
     right: 4%;
     color: white;
     font-size: 16px;
-
     font-weight: 400;
 
 }
@@ -491,7 +529,7 @@ position: relative;
     outline: none;
     box-shadow: none;
     border: 1px solid var(--main-color);
-    background: var(--backGround-color);
+    background: white;
 }
 .form-check-input:focus{
     outline: none;
@@ -621,6 +659,10 @@ position: relative;
 /************************** start style service details ******************************/
 .heart_svg.filled path {
     fill: #F33737;
+
+}
+.heart_svg.stroked path {
+    stroke: none;
 
 }
 .gray_page{
@@ -803,26 +845,27 @@ position: relative;
 .tab-title-form{
     font-size: 14px;
     color: #7797BB;
+    padding-bottom: 6px;
 }
 .active > .tab-title-form{
     color: var(--main-color);
     position: relative;
-    border-bottom: 2px solid var(--main-color);
+
   
 
 
 }
-/*.active > .tab-title-form::before{*/
-/*    content: " ";*/
-/*    width: 100%;*/
-/*    height: 3px;*/
-/*    background-color: var(--main-color);*/
-/*    position: absolute;*/
-/*    display: inline-block;*/
-/*    z-index: 100;*/
-/*    right: 16px;*/
-/*    bottom: -81%;*/
-/*}*/
+.active > .tab-title-form::before{
+    content: " ";
+    width: 8rem;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    display: inline-block;
+    z-index: 100;
+    right: 0;
+    bottom: -29%;
+}
 
 /* The switch - the box around the slider */
 .switch {
@@ -912,6 +955,10 @@ input:checked + .slider:before {
 input[type="file"]{
     display: none;
 }
+.fileName{
+    font-size: 13px;
+
+}
 .uploadlabel{
     border-radius: 6px;
     color: var(--gray);
@@ -920,6 +967,7 @@ input[type="file"]{
     font-weight: 300;
     cursor: pointer;
 }
+
 
 
 /******************** start style profile page *********************************/
@@ -1452,6 +1500,7 @@ footer > .copy-write{
     border-radius: 27px;
     border: 1px solid white;
 
+
 }
 
 .category-provider > .active > .provider-tab{
@@ -1751,10 +1800,35 @@ height: 184px}
         z-index: 2;
     }
 }
+/*need edit in mobile iphone 11 */
+@media (max-width: 767px){
+    .active > .tab-title-form::before{
+        display: none;
+    }
 
+}
+
+@media (max-width: 767px){
+    .index-img-card{
+        height: 260px;
+        object-fit: cover;
+    }
+
+}
 /*****************************test ******************/
 
-
+#phone {
+    padding-left: 50px !important;
+    padding-right: 15px;
+    /* Add your desired padding value here */
+}
+.iti__selected-dial-code {
+    color: #777777;
+    border-right: 1px solid #E7E7F5;
+}
+.iti__arrow {
+    display: none;
+}
 [dir=rtl] .iti--allow-dropdown .iti__flag-container{
     right: auto;
 
