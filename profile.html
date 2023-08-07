@@ -365,19 +365,20 @@
     <div class="col-12 col-lg-9  " >
       <div class="container white_card px-4 pt-4 pb-0 mt-3 mt-lg-0  ">
 
-        <div class="d-flex  div-img-profile px-0 justify-content-center justify-content-lg-start">
+
+
+      <form method="" action="" class="mt-2">
+      <div class="row ">
+        <div class="d-flex  div-img-profile px-0 justify-content-center justify-content-lg-start mb-4">
           <img src="assets/img/hero.svg" alt="profile-picture" class="img-fluid hero-profile-pic" id="output" >
 
-        <div class="upload_profile_div d-flex align-items-center justify-content-center justify-content-lg-start">
-          <label for="file-upload file" class="custom-file-upload">
-            <i class="fa-solid fa-plus" style="color: white;"></i>
-          </label>
-          <input id="file-upload file" type="file" class="upload_profile_input" onchange="loadFile(event)">
+          <div class="upload_profile_div d-flex align-items-center justify-content-center justify-content-lg-start">
+            <label for="file-upload file" class="custom-file-upload">
+              <i class="fa-solid fa-plus" style="color: white;"></i>
+            </label>
+            <input id="file-upload file" type="file" class="upload_profile_input" onchange="loadFile(event)">
+          </div>
         </div>
-        </div>
-
-      <form method="" action="" class="mt-4">
-      <div class="row ">
       <div class="col-lg-6">
             <label class=" label-form"> الاسم كامل  </label>
             <input name="name"  type="text" class="form-control mt-2 mb-4 py-3 text-start list_link  gray-inp"
@@ -392,7 +393,7 @@
       </div>
       <div class="col-lg-6">
         <label class="label-form"> البريد الإلكتروني <span class="gray_text"> (اختياري)</span></label>
-        <input name="email"  type="email" class="form-control mt-2 py-3 text-start gray_text gray-inp "
+        <input name="email"  type="email" class="form-control mt-2 py-3 text-start place-holder gray-inp "
                placeholder="  ادخال البريد الالكتروني" >
 
       </div>

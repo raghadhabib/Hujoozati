@@ -173,6 +173,13 @@ background: var(--main-color);
 a{
     text-decoration: none;
 }
+.fontAlert{
+    font-size: 13px;
+    font-weight: 400;
+    border: none;
+
+
+}
 /* to remove arrow from number input */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -864,7 +871,7 @@ position: relative;
     display: inline-block;
     z-index: 100;
     right: 0;
-    bottom: -29%;
+    bottom: -55%;
 }
 
 /* The switch - the box around the slider */

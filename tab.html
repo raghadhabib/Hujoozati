@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>حجوزاتي</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/gradiant_logo.svg">
+  <link rel="stylesheet" href="assets/fonts/stylesheet.css">
+  <!-- cdn for mobile input  -->
+
+  <!-- font awesome files -->
+  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.rtl.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+<body>
+<!--  alert here  -->
+<div class="alert alert-success fontAlert" role="alert">
+  تمت الإضافة بنجاح
+</div>
+
+<!-- Tab Content -->
+
+<div class="container mt-5">
+  <ul class="nav nav-tabs">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#tab1">Tab 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#tab2">Tab 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#tab3">Tab 3</a>
+    </li>
+  </ul>
+
+  <div class="tab-content mt-3">
+    <div id="tab1" class="tab-pane fade show active">
+      <h3>Tab 1 Content</h3>
+      <button id="nextButton" class="btn btn-primary">Next</button>
+    </div>
+    <div id="tab2" class="tab-pane fade">
+      <h3>Tab 2 Content</h3>
+      <button id="nextButton2" class="btn btn-primary">Next</button>
+    </div>
+    <div id="tab3" class="tab-pane fade">
+      <h3>Tab 3 Content</h3>
+    </div>
+  </div>
+
+
+
+        </div>
+
+
+<!-- Include Bootstrap JS and your custom script -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script>
+  // JavaScript code to switch tabs when "Next" button is clicked
+  $(document).ready(function() {
+    $('#nextButton').click(function() {
+      $('.nav-tabs a[href="#tab2"]').tab('show');
+    });
+  });
+
+  $(document).ready(function() {
+    $('#nextButton2').click(function() {
+      $('.nav-tabs a[href="#tab3"]').tab('show');
+    });
+  });
+</script>
+</body>
+</html>
+
+

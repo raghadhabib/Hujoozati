@@ -16,7 +16,11 @@
   <link rel="stylesheet" href="assets/css/aos.css" />
   <link rel="stylesheet" href="assets/css/style.css">
 
-
+  <style>
+    .tab {
+      display: none;
+    }
+  </style>
 </head>
 <body>
 
@@ -400,6 +404,35 @@
 </body>
 </html>
 
+
+  <script>
+    function openNextTab() {
+      var currentTab = document.querySelector(".tab.active");
+      var nextTab = currentTab.nextElementSibling;
+
+      if (nextTab && nextTab.classList.contains("tab")) {
+        currentTab.classList.remove("active");
+        nextTab.classList.add("active");
+      }
+    }
+  </script>
+</head>
+<body>
+
+<div class="tabs">
+  <div class="tab active">
+    <button onclick="openNextTab()">Open Next Tab</button>
+  </div>
+  <div class="tab">
+    <!-- Content for the second tab -->
+  </div>
+  <div class="tab">
+    <!-- Content for the third tab -->
+  </div>
+</div>
+
+</body>
+</html>
 
 
 

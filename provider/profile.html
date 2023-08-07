@@ -344,19 +344,20 @@
     <div class="col-12 col-lg-9  " >
       <div class="container white_card px-4 pt-4 pb-0 mt-3 mt-lg-0  ">
 
-        <div class="d-flex  div-img-profile px-0 justify-content-center justify-content-lg-start">
-          <img src="../assets/img/provider-profile.svg" alt="profile-picture" class="img-fluid hero-profile-pic" id="output" >
 
-          <div class="upload_profile_div d-flex align-items-center justify-content-center justify-content-lg-start">
-            <label for="file-upload file" class="custom-file-upload">
-              <i class="fa-solid fa-plus" style="color: white;"></i>
-            </label>
-            <input id="file-upload file" type="file" class="upload_profile_input" onchange="loadFile(event)">
-          </div>
-        </div>
 
-        <form method="" action="" class="mt-4">
+        <form method="" action="" class="mt-2">
           <div class="row ">
+            <div class="d-flex  div-img-profile px-0 justify-content-center justify-content-lg-start mb-4">
+              <img src="../assets/img/provider-profile.svg" alt="profile-picture" class="img-fluid hero-profile-pic" id="output" >
+
+              <div class="upload_profile_div d-flex align-items-center justify-content-center justify-content-lg-start">
+                <label for="file-upload file" class="custom-file-upload">
+                  <i class="fa-solid fa-plus" style="color: white;"></i>
+                </label>
+                <input id="file-upload file" type="file" class="upload_profile_input" onchange="loadFile(event)">
+              </div>
+            </div>
             <div class="col-12 col-md-6">
               <label class=" label-form mb-2"> نوع الحساب  </label>
 
@@ -436,7 +437,7 @@
               <label for="notes" class="label-form">
                 وصف نشاط الشركة
               </label>
-              <textarea name="textarea" rows="6" cols="40" id="notes" placeholder="يرجى اضافة وصف بسيط عن نشاط الشركة" class=" form-control mt-2 py-3 text-start  gray_text  gray-inp"></textarea>
+              <textarea name="textarea" rows="6" cols="40" id="notes" placeholder="يرجى اضافة وصف بسيط عن نشاط الشركة" class=" form-control mt-2 py-3 text-start  place-holder  gray-inp"></textarea>
               <br>
               <label class="label-form"> صورة السجل التجاري</label>
               <br>
